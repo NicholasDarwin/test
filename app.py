@@ -1,70 +1,116 @@
 import os
-from flask import Flask, render_template_string, request
 import subprocess
+import time
 import pandas as pd
-import re
-from virtual_screening_pipeline.src.docking.run_autodock_vina import run_vina
-from virtual_screening_pipeline.src.dynamics.run_gromacs import run_gromacs
-from virtual_screening_pipeline.src.analysis.binding_free_energy import calculate_binding_free_energy
-from virtual_screening_pipeline.src.analysis.visualize_results import generate_visualizations
+import logging
+from flask import Flask, request, jsonify, render_template
+from src.docking.prepare_receptors import prepare_receptor
+from src.docking.prepare_ligands import prepare_ligand
+from src.docking.run_autodock_vina import run_vina
+from src.dynamics.run_gromacs import run_gromacs_simulation
+from src.analysis.binding_free_energy import calculate_binding_free_energy
+from src.analysis.visualize_results import visualize_results
+from src.analysis.analyze_trajectories import analyze_trajectory
 
 app = Flask(__name__)
 
-@app.route('/', methods=['GET', 'POST'])
+DATA_DIR = os.path.join(os.path.dirname(__file__), 'data')
+
+# Set up logging
+logging.basicConfig(level=logging.DEBUG)
+
+@app.route('/')
+def index():
+    return render_template('index.html')
+
+@app.route('/run_pipeline', methods=['POST'])
 def run_pipeline():
-    # Ensure the 'data' folder exists
-    if not os.path.exists("data"):
-        os.makedirs("data")
+    try:
+        receptor_file = request.form.get('receptor_file')
+        ligand_files = request.form.get('ligand_files')
 
-    if request.method == 'POST':
-        pdb_filename = request.form.get('pdb_filename')
-        if pdb_filename:
-            # Ensure that the filename doesn't have spaces or special characters
-            pdb_filename = re.sub(r'[^a-zA-Z0-9_\-]', '', pdb_filename)
+        if not receptor_file or not ligand_files:
+            return jsonify({"error": "Receptor file and ligand files are required."}), 400
 
-            # Run AutoDock Vina
-            docking_results = run_vina(pdb_filename)
+        # Append .pdb extension to the file names if not already present
+        if not receptor_file.endswith('.pdb'):
+            receptor_file += '.pdb'
+        ligand_files = [file.strip() + '.pdb' if not file.strip().endswith('.pdb') else file.strip() for file in ligand_files.split(',')]
 
-            # Select top-ranked ligands and run GROMACS MD simulations
-            md_results = run_gromacs(docking_results)
+        receptor_file_path = os.path.join(DATA_DIR, receptor_file)
+        ligand_files = [os.path.join(DATA_DIR, file) for file in ligand_files]
 
-            # Perform binding free energy calculations
-            binding_free_energy_results = calculate_binding_free_energy(md_results)
+        logging.debug(f"Receptor file path: {receptor_file_path}")
+        logging.debug(f"Ligand files: {ligand_files}")
 
-            # Generate visualizations
-            visualizations = generate_visualizations(binding_free_energy_results)
+        # Prepare receptor and ligands
+        logging.debug("Preparing receptor...")
+        try:
+            prepared_receptor_file = prepare_receptor(receptor_file_path)
+            logging.debug(f"Prepared receptor file: {prepared_receptor_file}")
+        except Exception as e:
+            logging.error(f"Error preparing receptor: {e}")
+            return jsonify({"error": f"Error preparing receptor: {e}"}), 500
 
-            # Convert the results to HTML for rendering
-            docking_html = docking_results.to_html(classes='table table-striped')
-            md_html = md_results.to_html(classes='table table-striped')
-            binding_free_energy_html = binding_free_energy_results.to_html(classes='table table-striped')
-            visualizations_html = visualizations.to_html(classes='table table-striped')
+        logging.debug("Preparing ligands...")
+        try:
+            prepared_ligand_files = []
+            for file in ligand_files:
+                prepared_ligand_file = prepare_ligand(file)
+                prepared_ligand_files.append(prepared_ligand_file)
+                # Add a short delay to ensure the file system is updated
+                time.sleep(10)
+            logging.debug(f"Prepared ligand files: {prepared_ligand_files}")
+        except Exception as e:
+            logging.error(f"Error preparing ligands: {e}")
+            return jsonify({"error": f"Error preparing ligands: {e}"}), 500
 
-            # Return HTML table with results
-            return render_template_string(""" 
-                <h1>Virtual Screening Pipeline Results</h1>
-                <h2>Docking Results:</h2>
-                {{ docking_html|safe }}
-                <h2>Molecular Dynamics Results:</h2>
-                {{ md_html|safe }}
-                <h2>Binding Free Energy Results:</h2>
-                {{ binding_free_energy_html|safe }}
-                <h2>Visualizations:</h2>
-                {{ visualizations_html|safe }}
-                <hr>
-                <a href="/">Back</a>
-            """, docking_html=docking_html, md_html=md_html, binding_free_energy_html=binding_free_energy_html, visualizations_html=visualizations_html)
-        else:
-            return "Please provide a PDB file name."
-    
-    return render_template_string(""" 
-        <h1>Enter PDB Filename</h1>
-        <form method="post">
-            <label for="pdb_filename">PDB Filename (without extension):</label>
-            <input type="text" id="pdb_filename" name="pdb_filename" required>
-            <button type="submit">Submit</button>
-        </form>
-    """)
+        # Run molecular docking
+        logging.debug("Running molecular docking...")
+        docking_results = run_vina(prepared_receptor_file, prepared_ligand_files, DATA_DIR)
+        logging.debug(f"Docking results: {docking_results}")
+
+        # Extract top ligands from docking results
+        top_ligands = [result['output'] for result in docking_results]
+        logging.debug(f"Top ligands: {top_ligands}")
+
+        # Step 2: Run molecular dynamics simulations for top ligands
+        logging.debug("Running molecular dynamics simulations...")
+        md_results = run_gromacs_simulation(prepared_receptor_file, top_ligands, DATA_DIR)
+        logging.debug(f"Molecular dynamics results: {md_results}")
+
+        # Step 3: Calculate binding free energy
+        logging.debug("Calculating binding free energy...")
+        binding_energy_results = []
+        for ligand_file in top_ligands:
+            binding_energy, binding_data = calculate_binding_free_energy(ligand_file, DATA_DIR)
+            binding_energy_results.append({
+                "ligand_file": ligand_file,
+                "binding_energy": binding_energy,
+                "binding_data": binding_data
+            })
+        logging.debug(f"Binding free energy results: {binding_energy_results}")
+
+        # Step 4: Visualize results
+        logging.debug("Visualizing results...")
+        visualizations = visualize_results(binding_energy_results)
+        logging.debug(f"Visualizations: {visualizations}")
+
+        # Step 5: Analyze trajectories
+        logging.debug("Analyzing trajectories...")
+        trajectory_analysis = analyze_trajectory(md_results)
+        logging.debug(f"Trajectory analysis: {trajectory_analysis}")
+
+        return jsonify({
+            "docking_results": docking_results,
+            "md_results": md_results,
+            "binding_energy_results": binding_energy_results,
+            "trajectory_analysis": trajectory_analysis,
+            "visualizations": visualizations
+        })
+    except Exception as e:
+        logging.error(f"Error in run_pipeline: {e}")
+        return jsonify({"error": f"Error in run_pipeline: {e}"}), 500
 
 if __name__ == "__main__":
     app.run(debug=True)

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum Virus Simulation API</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">Quantum Virus Simulation API</h1>
+        <form action="/run_pipeline" method="post" class="mt-4">
+            <div class="form-group">
+                <label for="receptor_file">Receptor File Name</label>
+                <input type="text" class="form-control" id="receptor_file" name="receptor_file" placeholder="Enter receptor file name">
+            </div>
+            <div class="form-group">
+                <label for="ligand_files">Ligand File Names</label>
+                <input type="text" class="form-control" id="ligand_files" name="ligand_files" placeholder="Enter ligand file names (comma-separated)">
+            </div>
+            <button type="submit" class="btn btn-primary">Run Pipeline</button>
+        </form>
+    </div>
+</body>
+</html>

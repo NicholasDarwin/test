@@ -1,7 +1,6 @@
 import matplotlib.pyplot as plt
 import seaborn as sns
 import pandas as pd
-import numpy as np
 
 def plot_binding_affinities(binding_affinities, output_file='binding_affinities.png'):
     plt.figure(figsize=(10, 6))
@@ -32,7 +31,7 @@ def plot_heatmap(data, output_file='heatmap.png'):
     plt.savefig(output_file)
     plt.close()
 
-def generate_visualizations(binding_free_energy_results):
+def visualize_results(binding_free_energy_results):
     # Example visualization: Heatmap of binding free energy results
     plt.figure(figsize=(10, 8))
     sns.heatmap(binding_free_energy_results.pivot("Ligand", "Receptor", "FreeEnergy"), annot=True, cmap="coolwarm")

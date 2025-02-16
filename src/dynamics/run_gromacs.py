@@ -2,19 +2,33 @@ import os
 import subprocess
 import pandas as pd
 
+def convert_path_to_wsl(path):
+    """
+    Convert a Windows path to a WSL path.
+    
+    :param path: Windows path.
+    :return: WSL path.
+    """
+    return path.replace('C:\\', '/mnt/c/').replace('\\', '/')
+
 def run_gromacs_simulation(pdb_file, ligand_file, output_dir):
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
 
+    # Convert paths to WSL format
+    pdb_file_wsl = convert_path_to_wsl(pdb_file)
+    ligand_file_wsl = convert_path_to_wsl(ligand_file)
+    output_dir_wsl = convert_path_to_wsl(output_dir)
+
     # Prepare the GROMACS command for running the simulation
-    command = f"gmx grompp -f md.mdp -c {pdb_file} -p topol.top -o md.tpr"
+    command = f"wsl gmx grompp -f md.mdp -c {pdb_file_wsl} -p topol.top -o md.tpr"
     
     try:
         # Run the GROMACS pre-processing command
         subprocess.run(command, check=True, shell=True)
 
         # Run the molecular dynamics simulation
-        command = "gmx mdrun -deffnm md"
+        command = "wsl gmx mdrun -deffnm md"
         subprocess.run(command, check=True, shell=True)
 
         # Move results to the output directory
