@@ -254,7 +254,7 @@ ENDROOT
 TORSDOF 223
 ENDMDL
 MODEL 2
-REMARK VINA RESULT:    -0.551      2.880      2.880
+REMARK VINA RESULT:    -0.551      2.881      2.881
 REMARK INTER + INTRA:          -0.551
 REMARK INTER:                  -0.551
 REMARK INTRA:                   0.000
@@ -509,9 +509,9 @@ ENDROOT
 TORSDOF 223
 ENDMDL
 MODEL 3
-REMARK VINA RESULT:    -0.452      6.920      6.920
-REMARK INTER + INTRA:          -0.452
-REMARK INTER:                  -0.452
+REMARK VINA RESULT:    -0.453      6.921      6.921
+REMARK INTER + INTRA:          -0.453
+REMARK INTER:                  -0.453
 REMARK INTRA:                   0.000
 REMARK UNBOUND:                 0.000
 REMARK WARNING: 32 MAX_TORS EXCEEDED!!!
@@ -759,14 +759,14 @@ REMARK  221  A    between atoms: CA_994  and  CB_997
 REMARK  222  A    between atoms: CA_994  and  C_995 
 REMARK  223  A    between atoms: CB_997  and  CG_998 
 ROOT
-HETATM    1  O   HOH A 130      -0.742   8.302  -6.929  1.00 19.48     0.000 OA
+HETATM    1  O   HOH A 130      -0.751   8.296  -6.910  1.00 19.48     0.000 OA
 ENDROOT
 TORSDOF 223
 ENDMDL
 MODEL 4
-REMARK VINA RESULT:    -0.434      7.051      7.051
-REMARK INTER + INTRA:          -0.434
-REMARK INTER:                  -0.434
+REMARK VINA RESULT:    -0.433      7.040      7.040
+REMARK INTER + INTRA:          -0.433
+REMARK INTER:                  -0.433
 REMARK INTRA:                   0.000
 REMARK UNBOUND:                 0.000
 REMARK WARNING: 32 MAX_TORS EXCEEDED!!!
@@ -1014,14 +1014,14 @@ REMARK  221  A    between atoms: CA_994  and  CB_997
 REMARK  222  A    between atoms: CA_994  and  C_995 
 REMARK  223  A    between atoms: CB_997  and  CG_998 
 ROOT
-HETATM    1  O   HOH A 130       8.855   6.589   0.646  1.00 19.48     0.000 OA
+HETATM    1  O   HOH A 130       8.838   6.606   0.639  1.00 19.48     0.000 OA
 ENDROOT
 TORSDOF 223
 ENDMDL
 MODEL 5
-REMARK VINA RESULT:    -0.379     10.833     10.833
-REMARK INTER + INTRA:          -0.379
-REMARK INTER:                  -0.379
+REMARK VINA RESULT:    -0.380     10.850     10.850
+REMARK INTER + INTRA:          -0.380
+REMARK INTER:                  -0.380
 REMARK INTRA:                   0.000
 REMARK UNBOUND:                 0.000
 REMARK WARNING: 32 MAX_TORS EXCEEDED!!!
@@ -1269,14 +1269,14 @@ REMARK  221  A    between atoms: CA_994  and  CB_997
 REMARK  222  A    between atoms: CA_994  and  C_995 
 REMARK  223  A    between atoms: CB_997  and  CG_998 
 ROOT
-HETATM    1  O   HOH A 130      -4.172   9.985  -2.978  1.00 19.48     0.000 OA
+HETATM    1  O   HOH A 130      -4.182  10.004  -2.976  1.00 19.48     0.000 OA
 ENDROOT
 TORSDOF 223
 ENDMDL
 MODEL 6
-REMARK VINA RESULT:    -0.374     10.401     10.401
-REMARK INTER + INTRA:          -0.374
-REMARK INTER:                  -0.374
+REMARK VINA RESULT:    -0.359      9.351      9.351
+REMARK INTER + INTRA:          -0.359
+REMARK INTER:                  -0.359
 REMARK INTRA:                   0.000
 REMARK UNBOUND:                 0.000
 REMARK WARNING: 32 MAX_TORS EXCEEDED!!!
@@ -1524,14 +1524,14 @@ REMARK  221  A    between atoms: CA_994  and  CB_997
 REMARK  222  A    between atoms: CA_994  and  C_995 
 REMARK  223  A    between atoms: CB_997  and  CG_998 
 ROOT
-HETATM    1  O   HOH A 130      -0.579   9.378   2.196  1.00 19.48     0.000 OA
+HETATM    1  O   HOH A 130       6.636   7.990   3.533  1.00 19.48     0.000 OA
 ENDROOT
 TORSDOF 223
 ENDMDL
 MODEL 7
-REMARK VINA RESULT:    -0.338      2.519      2.519
-REMARK INTER + INTRA:          -0.338
-REMARK INTER:                  -0.338
+REMARK VINA RESULT:    -0.337      2.400      2.400
+REMARK INTER + INTRA:          -0.337
+REMARK INTER:                  -0.337
 REMARK INTRA:                   0.000
 REMARK UNBOUND:                 0.000
 REMARK WARNING: 32 MAX_TORS EXCEEDED!!!
@@ -1779,14 +1779,14 @@ REMARK  221  A    between atoms: CA_994  and  CB_997
 REMARK  222  A    between atoms: CA_994  and  C_995 
 REMARK  223  A    between atoms: CB_997  and  CG_998 
 ROOT
-HETATM    1  O   HOH A 130       3.031   4.822  -6.065  1.00 19.48     0.000 OA
+HETATM    1  O   HOH A 130       3.152   4.847  -6.065  1.00 19.48     0.000 OA
 ENDROOT
 TORSDOF 223
 ENDMDL
 MODEL 8
-REMARK VINA RESULT:    -0.330      2.570      2.570
-REMARK INTER + INTRA:          -0.330
-REMARK INTER:                  -0.330
+REMARK VINA RESULT:    -0.271      3.757      3.757
+REMARK INTER + INTRA:          -0.271
+REMARK INTER:                  -0.271
 REMARK INTRA:                   0.000
 REMARK UNBOUND:                 0.000
 REMARK WARNING: 32 MAX_TORS EXCEEDED!!!
@@ -2034,14 +2034,14 @@ REMARK  221  A    between atoms: CA_994  and  CB_997
 REMARK  222  A    between atoms: CA_994  and  C_995 
 REMARK  223  A    between atoms: CB_997  and  CG_998 
 ROOT
-HETATM    1  O   HOH A 130       4.777   4.366  -3.127  1.00 19.48     0.000 OA
+HETATM    1  O   HOH A 130       2.968   4.718  -8.172  1.00 19.48     0.000 OA
 ENDROOT
 TORSDOF 223
 ENDMDL
 MODEL 9
-REMARK VINA RESULT:    -0.281      6.281      6.281
-REMARK INTER + INTRA:          -0.281
-REMARK INTER:                  -0.281
+REMARK VINA RESULT:    -0.261      4.989      4.989
+REMARK INTER + INTRA:          -0.261
+REMARK INTER:                  -0.261
 REMARK INTRA:                   0.000
 REMARK UNBOUND:                 0.000
 REMARK WARNING: 32 MAX_TORS EXCEEDED!!!
@@ -2289,7 +2289,7 @@ REMARK  221  A    between atoms: CA_994  and  CB_997
 REMARK  222  A    between atoms: CA_994  and  C_995 
 REMARK  223  A    between atoms: CB_997  and  CG_998 
 ROOT
-HETATM    1  O   HOH A 130       5.625   4.127   0.755  1.00 19.48     0.000 OA
+HETATM    1  O   HOH A 130       1.061   4.639  -2.999  1.00 19.48     0.000 OA
 ENDROOT
 TORSDOF 223
 ENDMDL

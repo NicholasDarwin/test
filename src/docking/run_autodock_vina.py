@@ -21,7 +21,7 @@ def convert_path_to_wsl(path):
 
 def run_vina(receptor_file, ligand_files, output_dir):
     """
-    Run AutoDock Vina for multiple ligands.
+    Run AutoDock Vina for multiple ligands and convert the output to PDB.
 
     :param receptor_file: Path to the receptor PDBQT file.
     :param ligand_files: List of ligand PDBQT file paths.
@@ -37,14 +37,14 @@ def run_vina(receptor_file, ligand_files, output_dir):
 
     for ligand_file, ligand_file_wsl in zip(ligand_files, ligand_files_wsl):
         ligand_name = os.path.splitext(os.path.basename(ligand_file))[0]
-        output_file = os.path.join(output_dir, f"{ligand_name}_docked.pdbqt")
-        output_file_wsl = convert_path_to_wsl(output_file)
+        output_pdbqt = os.path.join(output_dir, f"{ligand_name}_docked.pdbqt")
+        output_pdbqt_wsl = convert_path_to_wsl(output_pdbqt)
 
         vina_command = [
             'wsl', 'vina',
             '--receptor', receptor_file_wsl,
             '--ligand', ligand_file_wsl,
-            '--out', output_file_wsl,
+            '--out', output_pdbqt_wsl,
             '--center_x', '0', '--center_y', '0', '--center_z', '0',
             '--size_x', '20', '--size_y', '20', '--size_z', '20'
         ]
@@ -58,7 +58,12 @@ def run_vina(receptor_file, ligand_files, output_dir):
             continue
 
         logging.debug(f"AutoDock Vina output for {ligand_file}: {result.stdout}")
-        output_results.append({"ligand": ligand_file, "output": output_file})
+
+        # Convert docked file to PDB format
+        output_pdb = os.path.join(output_dir, f"{ligand_name}_docked.pdb")
+        convert_pdbqt_to_pdb(output_pdbqt, output_pdb)
+
+        output_results.append({"ligand": ligand_file, "pdbqt_output": output_pdbqt, "pdb_output": output_pdb})
 
     return output_results
 
@@ -88,6 +93,26 @@ def run_docking(receptor_file, ligand_files):
             logging.error(f"Docking failed for {ligand_file}: {e}")
     
     return docking_results
+
+def convert_pdbqt_to_pdb(input_pdbqt, output_pdb):
+    """
+    Convert a PDBQT file to a PDB file using Open Babel.
+    
+    :param input_pdbqt: Path to the input PDBQT file.
+    :param output_pdb: Path to the output PDB file.
+    """
+    input_pdbqt_wsl = convert_path_to_wsl(input_pdbqt)
+    output_pdb_wsl = convert_path_to_wsl(output_pdb)
+
+    obabel_command = ["wsl", "obabel", input_pdbqt_wsl, "-O", output_pdb_wsl]
+    logging.debug(f"Running Open Babel command: {' '.join(obabel_command)}")
+
+    result = subprocess.run(obabel_command, capture_output=True, text=True)
+
+    if result.returncode != 0:
+        logging.error(f"Open Babel failed: {result.stderr}")
+    else:
+        logging.debug(f"Conversion successful: {result.stdout}")
 
 
 # Example usage:

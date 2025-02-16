@@ -512,263 +512,7 @@ MASTER        0    0    0    0    0    0    0    0    1    0    1    0
 ENDMDL
 MODEL        3
 MODEL 3
-REMARK VINA RESULT:    -0.457      1.904      1.904
-REMARK INTER + INTRA:          -0.457
-REMARK INTER:                  -0.457
-REMARK INTRA:                   0.000
-REMARK UNBOUND:                 0.000
-REMARK WARNING: 32 MAX_TORS EXCEEDED!!!
-REMARK  223 active torsions:
-REMARK  status: ('A' for Active; 'I' for Inactive)
-REMARK    1  A    between atoms: CA_2  and  C_3 
-REMARK    2  A    between atoms: CA_2  and  CB_5 
-REMARK       I    between atoms: C_3  and  N_10 
-REMARK    3  A    between atoms: CB_5  and  CG_6 
-REMARK    4  A    between atoms: CG_6  and  CD_7 
-REMARK    5  A    between atoms: CD_7  and  CE_8 
-REMARK    6  A    between atoms: N_10  and  CA_11 
-REMARK    7  A    between atoms: CA_11  and  C_12 
-REMARK    8  A    between atoms: CA_11  and  CB_14 
-REMARK       I    between atoms: C_12  and  N_17 
-REMARK    9  A    between atoms: N_17  and  CA_18 
-REMARK   10  A    between atoms: CA_18  and  C_19 
-REMARK   11  A    between atoms: CA_18  and  CB_21 
-REMARK       I    between atoms: C_19  and  N_28 
-REMARK   12  A    between atoms: CB_21  and  CG_22 
-REMARK   13  A    between atoms: N_28  and  CA_29 
-REMARK   14  A    between atoms: CA_29  and  C_30 
-REMARK       I    between atoms: C_30  and  N_32 
-REMARK   15  A    between atoms: N_32  and  CA_33 
-REMARK   16  A    between atoms: CA_33  and  CB_36 
-REMARK   17  A    between atoms: CA_33  and  C_34 
-REMARK       I    between atoms: C_34  and  N_43 
-REMARK   18  A    between atoms: CB_36  and  CG_37 
-REMARK   19  A    between atoms: CG_37  and  CD_38 
-REMARK   20  A    between atoms: CD_38  and  NE_39 
-REMARK       I    between atoms: NE_39  and  CZ_40 
-REMARK   21  A    between atoms: N_43  and  CA_44 
-REMARK   22  A    between atoms: CA_50  and  CB_53 
-REMARK   23  A    between atoms: CB_53  and  CG_54 
-REMARK   24  A    between atoms: CG_54  and  CD_55 
-REMARK   25  A    between atoms: CA_59  and  CB_62 
-REMARK   26  A    between atoms: CB_62  and  CG_63 
-REMARK   27  A    between atoms: CA_82  and  CB_85 
-REMARK   28  A    between atoms: CB_85  and  CG_86 
-REMARK   29  A    between atoms: CG_86  and  SD_87 
-REMARK   30  A    between atoms: CA_90  and  CB_93 
-REMARK   31  A    between atoms: CB_93  and  CG_94 
-REMARK   32  A    between atoms: CG_94  and  CD_95 
-REMARK   33  A    between atoms: CD_95  and  CE_96 
-REMARK   34  A    between atoms: CA_99  and  CB_102 
-REMARK   35  A    between atoms: CB_102  and  CG_103 
-REMARK   36  A    between atoms: CG_103  and  CD_104 
-REMARK   37  A    between atoms: CD_104  and  NE_105 
-REMARK       I    between atoms: NE_105  and  CZ_106 
-REMARK   38  A    between atoms: CA_110  and  CB_113 
-REMARK   39  A    between atoms: CB_113  and  CG_114 
-REMARK   40  A    between atoms: CA_124  and  CB_127 
-REMARK   41  A    between atoms: CB_127  and  CG_128 
-REMARK   42  A    between atoms: CA_132  and  CB_135 
-REMARK   43  A    between atoms: CB_135  and  CG_136 
-REMARK   44  A    between atoms: CA_140  and  CB_143 
-REMARK   45  A    between atoms: CB_143  and  CG_144 
-REMARK   46  A    between atoms: CA_148  and  CB_151 
-REMARK   47  A    between atoms: CB_151  and  CG_152 
-REMARK   48  A    between atoms: CA_160  and  CB_163 
-REMARK   49  A    between atoms: CB_163  and  CG_164 
-REMARK   50  A    between atoms: CG_164  and  CD_165 
-REMARK   51  A    between atoms: CD_165  and  NE_166 
-REMARK       I    between atoms: NE_166  and  CZ_167 
-REMARK   52  A    between atoms: CA_175  and  CB_178 
-REMARK   53  A    between atoms: CB_178  and  CG_179 
-REMARK   54  A    between atoms: CA_187  and  CB_190 
-REMARK   55  A    between atoms: CA_193  and  CB_196 
-REMARK   56  A    between atoms: CB_196  and  CG_197 
-REMARK   57  A    between atoms: CA_205  and  CB_208 
-REMARK   58  A    between atoms: CB_208  and  CG_209 
-REMARK   59  A    between atoms: CA_213  and  CB_216 
-REMARK   60  A    between atoms: CB_216  and  CG_217 
-REMARK   61  A    between atoms: CA_227  and  CB_230 
-REMARK   62  A    between atoms: CA_250  and  CB_253 
-REMARK   63  A    between atoms: CB_253  and  CG_254 
-REMARK   64  A    between atoms: CG_254  and  CD_255 
-REMARK   65  A    between atoms: CD_255  and  CE_256 
-REMARK   66  A    between atoms: CA_259  and  CB_262 
-REMARK   67  A    between atoms: CB_262  and  CG_263 
-REMARK   68  A    between atoms: CA_270  and  CB_273 
-REMARK   69  A    between atoms: CB_273  and  CG_274 
-REMARK   70  A    between atoms: CG_274  and  CD_275 
-REMARK   71  A    between atoms: CA_279  and  CB_282 
-REMARK   72  A    between atoms: CA_285  and  CB_288 
-REMARK   73  A    between atoms: CB_288  and  CG_289 
-REMARK   74  A    between atoms: CA_293  and  CB_296 
-REMARK   75  A    between atoms: CB_296  and  CG_297 
-REMARK   76  A    between atoms: CA_304  and  CB_307 
-REMARK   77  A    between atoms: CB_307  and  CG_308 
-REMARK   78  A    between atoms: CA_312  and  CB_315 
-REMARK   79  A    between atoms: CA_319  and  CB_322 
-REMARK   80  A    between atoms: CB_322  and  CG_323 
-REMARK   81  A    between atoms: CG_323  and  CD_324 
-REMARK   82  A    between atoms: CA_333  and  CB_336 
-REMARK   83  A    between atoms: CA_340  and  CB_343 
-REMARK   84  A    between atoms: CB_343  and  CG_344 
-REMARK   85  A    between atoms: CA_348  and  CB_351 
-REMARK   86  A    between atoms: CB_351  and  CG_352 
-REMARK   87  A    between atoms: CG_352  and  CD_353 
-REMARK   88  A    between atoms: CD_353  and  NE_354 
-REMARK       I    between atoms: NE_354  and  CZ_355 
-REMARK   89  A    between atoms: CA_359  and  CB_362 
-REMARK   90  A    between atoms: CB_362  and  CG_363 
-REMARK   91  A    between atoms: CA_367  and  CB_370 
-REMARK   92  A    between atoms: CA_374  and  CB_377 
-REMARK   93  A    between atoms: CB_377  and  CG_378 
-REMARK   94  A    between atoms: CA_386  and  CB_389 
-REMARK   95  A    between atoms: CA_392  and  CB_395 
-REMARK   96  A    between atoms: CA_399  and  CB_402 
-REMARK   97  A    between atoms: CB_402  and  CG_403 
-REMARK   98  A    between atoms: CA_407  and  CB_410 
-REMARK   99  A    between atoms: CB_410  and  CG_411 
-REMARK  100  A    between atoms: CA_423  and  CB_426 
-REMARK  101  A    between atoms: CB_426  and  CG1_427 
-REMARK  102  A    between atoms: CA_431  and  CB_434 
-REMARK  103  A    between atoms: CB_434  and  CG_435 
-REMARK  104  A    between atoms: CA_439  and  CB_442 
-REMARK  105  A    between atoms: CB_442  and  CG_443 
-REMARK  106  A    between atoms: CG_443  and  CD_444 
-REMARK  107  A    between atoms: CA_448  and  CB_451 
-REMARK  108  A    between atoms: CB_451  and  CG1_452 
-REMARK  109  A    between atoms: CA_456  and  CB_459 
-REMARK  110  A    between atoms: CB_459  and  CG_460 
-REMARK  111  A    between atoms: CA_464  and  CB_467 
-REMARK  112  A    between atoms: CA_470  and  CB_473 
-REMARK  113  A    between atoms: CB_473  and  CG_474 
-REMARK  114  A    between atoms: CG_474  and  CD_475 
-REMARK  115  A    between atoms: CD_475  and  NE_476 
-REMARK       I    between atoms: NE_476  and  CZ_477 
-REMARK  116  A    between atoms: CA_481  and  CB_484 
-REMARK  117  A    between atoms: CB_484  and  CG_485 
-REMARK  118  A    between atoms: CA_495  and  CB_498 
-REMARK  119  A    between atoms: CB_498  and  CG_499 
-REMARK  120  A    between atoms: CA_515  and  CB_518 
-REMARK  121  A    between atoms: CB_518  and  CG_519 
-REMARK  122  A    between atoms: CA_523  and  CB_526 
-REMARK  123  A    between atoms: CB_526  and  CG_527 
-REMARK  124  A    between atoms: CA_535  and  CB_538 
-REMARK  125  A    between atoms: CB_538  and  CG_539 
-REMARK  126  A    between atoms: CG_539  and  CD_540 
-REMARK  127  A    between atoms: CD_540  and  NE_541 
-REMARK       I    between atoms: NE_541  and  CZ_542 
-REMARK  128  A    between atoms: CA_546  and  CB_549 
-REMARK  129  A    between atoms: CA_564  and  CB_567 
-REMARK  130  A    between atoms: CA_570  and  CB_573 
-REMARK  131  A    between atoms: CB_573  and  CG_574 
-REMARK  132  A    between atoms: CG_574  and  CD_575 
-REMARK  133  A    between atoms: CD_575  and  NE_576 
-REMARK       I    between atoms: NE_576  and  CZ_577 
-REMARK  134  A    between atoms: CA_581  and  CB_584 
-REMARK  135  A    between atoms: CB_584  and  CG_585 
-REMARK  136  A    between atoms: CA_589  and  CB_592 
-REMARK  137  A    between atoms: CB_592  and  CG_593 
-REMARK  138  A    between atoms: CA_603  and  CB_606 
-REMARK  139  A    between atoms: CB_606  and  CG_607 
-REMARK  140  A    between atoms: CA_611  and  CB_614 
-REMARK  141  A    between atoms: CB_614  and  CG1_615 
-REMARK  142  A    between atoms: CA_632  and  CB_635 
-REMARK  143  A    between atoms: CA_643  and  CB_646 
-REMARK  144  A    between atoms: CB_646  and  CG_647 
-REMARK  145  A    between atoms: CA_651  and  CB_654 
-REMARK  146  A    between atoms: CB_654  and  CG_655 
-REMARK  147  A    between atoms: CA_659  and  CB_662 
-REMARK  148  A    between atoms: CA_665  and  CB_668 
-REMARK  149  A    between atoms: CA_671  and  CB_674 
-REMARK  150  A    between atoms: CB_674  and  CG_675 
-REMARK  151  A    between atoms: CA_679  and  CB_682 
-REMARK  152  A    between atoms: CB_682  and  CG1_683 
-REMARK  153  A    between atoms: CA_687  and  CB_690 
-REMARK  154  A    between atoms: CA_699  and  CB_702 
-REMARK  155  A    between atoms: CA_705  and  CB_708 
-REMARK  156  A    between atoms: CA_712  and  CB_715 
-REMARK  157  A    between atoms: CB_715  and  CG_716 
-REMARK  158  A    between atoms: CA_731  and  CB_734 
-REMARK  159  A    between atoms: CB_734  and  CG_735 
-REMARK  160  A    between atoms: CG_735  and  CD_736 
-REMARK  161  A    between atoms: CD_736  and  CE_737 
-REMARK  162  A    between atoms: CA_740  and  CB_743 
-REMARK  163  A    between atoms: CB_743  and  CG_744 
-REMARK  164  A    between atoms: CG_744  and  CD_745 
-REMARK  165  A    between atoms: CD_745  and  CE_746 
-REMARK  166  A    between atoms: CA_749  and  CB_752 
-REMARK  167  A    between atoms: CB_752  and  CG1_753 
-REMARK  168  A    between atoms: CA_757  and  CB_760 
-REMARK  169  A    between atoms: CA_764  and  CB_767 
-REMARK  170  A    between atoms: CA_770  and  CB_773 
-REMARK  171  A    between atoms: CB_773  and  CG_774 
-REMARK  172  A    between atoms: CA_782  and  CB_785 
-REMARK  173  A    between atoms: CB_785  and  CG_786 
-REMARK  174  A    between atoms: CA_794  and  CB_797 
-REMARK  175  A    between atoms: CB_797  and  CG_798 
-REMARK  176  A    between atoms: CG_798  and  SD_799 
-REMARK  177  A    between atoms: CA_802  and  CB_805 
-REMARK  178  A    between atoms: CB_805  and  CG_806 
-REMARK  179  A    between atoms: CA_815  and  CB_818 
-REMARK  180  A    between atoms: CB_818  and  CG_819 
-REMARK  181  A    between atoms: CA_829  and  CB_832 
-REMARK  182  A    between atoms: CA_841  and  CB_844 
-REMARK  183  A    between atoms: CB_844  and  CG_845 
-REMARK  184  A    between atoms: CA_855  and  CB_858 
-REMARK  185  A    between atoms: CB_858  and  CG_859 
-REMARK  186  A    between atoms: CG_859  and  CD_860 
-REMARK  187  A    between atoms: CD_860  and  NE_861 
-REMARK       I    between atoms: NE_861  and  CZ_862 
-REMARK  188  A    between atoms: CA_866  and  CB_869 
-REMARK  189  A    between atoms: CB_869  and  CG_870 
-REMARK  190  A    between atoms: CA_874  and  CB_877 
-REMARK  191  A    between atoms: CB_877  and  CG_878 
-REMARK  192  A    between atoms: CG_878  and  CD_879 
-REMARK  193  A    between atoms: CD_879  and  NE_880 
-REMARK       I    between atoms: NE_880  and  CZ_881 
-REMARK  194  A    between atoms: CA_891  and  CB_894 
-REMARK  195  A    between atoms: CB_894  and  CG_895 
-REMARK  196  A    between atoms: CG_895  and  CD_896 
-REMARK  197  A    between atoms: CD_896  and  CE_897 
-REMARK  198  A    between atoms: CA_904  and  CB_907 
-REMARK  199  A    between atoms: CA_911  and  CB_914 
-REMARK  200  A    between atoms: CB_914  and  CG_915 
-REMARK  201  A    between atoms: CA_919  and  CB_922 
-REMARK  202  A    between atoms: CA_926  and  CB_929 
-REMARK  203  A    between atoms: CB_929  and  CG_930 
-REMARK  204  A    between atoms: CG_930  and  CD_931 
-REMARK  205  A    between atoms: CA_940  and  CB_943 
-REMARK  206  A    between atoms: CB_943  and  CG_944 
-REMARK  207  A    between atoms: CA_954  and  CB_957 
-REMARK  208  A    between atoms: CB_957  and  CG1_958 
-REMARK  209  A    between atoms: CA_962  and  CB_965 
-REMARK  210  A    between atoms: CB_965  and  CG_966 
-REMARK  211  A    between atoms: CG_966  and  CD_967 
-REMARK  212  A    between atoms: CD_967  and  NE_968 
-REMARK       I    between atoms: NE_968  and  CZ_969 
-REMARK  213  A    between atoms: CA_977  and  C_978 
-REMARK       I    between atoms: C_978  and  N_982 
-REMARK  214  A    between atoms: N_982  and  CA_983 
-REMARK  215  A    between atoms: CA_983  and  C_984 
-REMARK  216  A    between atoms: CA_983  and  CB_986 
-REMARK       I    between atoms: C_984  and  N_993 
-REMARK  217  A    between atoms: CB_986  and  CG_987 
-REMARK  218  A    between atoms: CG_987  and  CD_988 
-REMARK  219  A    between atoms: CD_988  and  NE_989 
-REMARK       I    between atoms: NE_989  and  CZ_990 
-REMARK  220  A    between atoms: N_993  and  CA_994 
-REMARK  221  A    between atoms: CA_994  and  CB_997 
-REMARK  222  A    between atoms: CA_994  and  C_995 
-REMARK  223  A    between atoms: CB_997  and  CG_998 
-COMPND    /mnt/c/Users/Lenovo/Desktop/code/quantum_virus_simulation/data/1aki_docked.pdbqt 
-AUTHOR    GENERATED BY OPEN BABEL 3.1.1
-HETATM    1  O   HOH A 130       4.335   5.762  -6.946  1.00  0.00           O  
-MASTER        0    0    0    0    0    0    0    0    1    0    1    0
-ENDMDL
-MODEL        4
-MODEL 4
-REMARK VINA RESULT:    -0.453      6.920      6.920
+REMARK VINA RESULT:    -0.453      6.921      6.921
 REMARK INTER + INTRA:          -0.453
 REMARK INTER:                  -0.453
 REMARK INTRA:                   0.000
@@ -1019,12 +763,268 @@ REMARK  222  A    between atoms: CA_994  and  C_995
 REMARK  223  A    between atoms: CB_997  and  CG_998 
 COMPND    /mnt/c/Users/Lenovo/Desktop/code/quantum_virus_simulation/data/1aki_docked.pdbqt 
 AUTHOR    GENERATED BY OPEN BABEL 3.1.1
-HETATM    1  O   HOH A 130      -0.750   8.295  -6.911  1.00  0.00           O  
+HETATM    1  O   HOH A 130      -0.751   8.296  -6.910  1.00  0.00           O  
+MASTER        0    0    0    0    0    0    0    0    1    0    1    0
+ENDMDL
+MODEL        4
+MODEL 4
+REMARK VINA RESULT:    -0.433      7.040      7.040
+REMARK INTER + INTRA:          -0.433
+REMARK INTER:                  -0.433
+REMARK INTRA:                   0.000
+REMARK UNBOUND:                 0.000
+REMARK WARNING: 32 MAX_TORS EXCEEDED!!!
+REMARK  223 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: CA_2  and  C_3 
+REMARK    2  A    between atoms: CA_2  and  CB_5 
+REMARK       I    between atoms: C_3  and  N_10 
+REMARK    3  A    between atoms: CB_5  and  CG_6 
+REMARK    4  A    between atoms: CG_6  and  CD_7 
+REMARK    5  A    between atoms: CD_7  and  CE_8 
+REMARK    6  A    between atoms: N_10  and  CA_11 
+REMARK    7  A    between atoms: CA_11  and  C_12 
+REMARK    8  A    between atoms: CA_11  and  CB_14 
+REMARK       I    between atoms: C_12  and  N_17 
+REMARK    9  A    between atoms: N_17  and  CA_18 
+REMARK   10  A    between atoms: CA_18  and  C_19 
+REMARK   11  A    between atoms: CA_18  and  CB_21 
+REMARK       I    between atoms: C_19  and  N_28 
+REMARK   12  A    between atoms: CB_21  and  CG_22 
+REMARK   13  A    between atoms: N_28  and  CA_29 
+REMARK   14  A    between atoms: CA_29  and  C_30 
+REMARK       I    between atoms: C_30  and  N_32 
+REMARK   15  A    between atoms: N_32  and  CA_33 
+REMARK   16  A    between atoms: CA_33  and  CB_36 
+REMARK   17  A    between atoms: CA_33  and  C_34 
+REMARK       I    between atoms: C_34  and  N_43 
+REMARK   18  A    between atoms: CB_36  and  CG_37 
+REMARK   19  A    between atoms: CG_37  and  CD_38 
+REMARK   20  A    between atoms: CD_38  and  NE_39 
+REMARK       I    between atoms: NE_39  and  CZ_40 
+REMARK   21  A    between atoms: N_43  and  CA_44 
+REMARK   22  A    between atoms: CA_50  and  CB_53 
+REMARK   23  A    between atoms: CB_53  and  CG_54 
+REMARK   24  A    between atoms: CG_54  and  CD_55 
+REMARK   25  A    between atoms: CA_59  and  CB_62 
+REMARK   26  A    between atoms: CB_62  and  CG_63 
+REMARK   27  A    between atoms: CA_82  and  CB_85 
+REMARK   28  A    between atoms: CB_85  and  CG_86 
+REMARK   29  A    between atoms: CG_86  and  SD_87 
+REMARK   30  A    between atoms: CA_90  and  CB_93 
+REMARK   31  A    between atoms: CB_93  and  CG_94 
+REMARK   32  A    between atoms: CG_94  and  CD_95 
+REMARK   33  A    between atoms: CD_95  and  CE_96 
+REMARK   34  A    between atoms: CA_99  and  CB_102 
+REMARK   35  A    between atoms: CB_102  and  CG_103 
+REMARK   36  A    between atoms: CG_103  and  CD_104 
+REMARK   37  A    between atoms: CD_104  and  NE_105 
+REMARK       I    between atoms: NE_105  and  CZ_106 
+REMARK   38  A    between atoms: CA_110  and  CB_113 
+REMARK   39  A    between atoms: CB_113  and  CG_114 
+REMARK   40  A    between atoms: CA_124  and  CB_127 
+REMARK   41  A    between atoms: CB_127  and  CG_128 
+REMARK   42  A    between atoms: CA_132  and  CB_135 
+REMARK   43  A    between atoms: CB_135  and  CG_136 
+REMARK   44  A    between atoms: CA_140  and  CB_143 
+REMARK   45  A    between atoms: CB_143  and  CG_144 
+REMARK   46  A    between atoms: CA_148  and  CB_151 
+REMARK   47  A    between atoms: CB_151  and  CG_152 
+REMARK   48  A    between atoms: CA_160  and  CB_163 
+REMARK   49  A    between atoms: CB_163  and  CG_164 
+REMARK   50  A    between atoms: CG_164  and  CD_165 
+REMARK   51  A    between atoms: CD_165  and  NE_166 
+REMARK       I    between atoms: NE_166  and  CZ_167 
+REMARK   52  A    between atoms: CA_175  and  CB_178 
+REMARK   53  A    between atoms: CB_178  and  CG_179 
+REMARK   54  A    between atoms: CA_187  and  CB_190 
+REMARK   55  A    between atoms: CA_193  and  CB_196 
+REMARK   56  A    between atoms: CB_196  and  CG_197 
+REMARK   57  A    between atoms: CA_205  and  CB_208 
+REMARK   58  A    between atoms: CB_208  and  CG_209 
+REMARK   59  A    between atoms: CA_213  and  CB_216 
+REMARK   60  A    between atoms: CB_216  and  CG_217 
+REMARK   61  A    between atoms: CA_227  and  CB_230 
+REMARK   62  A    between atoms: CA_250  and  CB_253 
+REMARK   63  A    between atoms: CB_253  and  CG_254 
+REMARK   64  A    between atoms: CG_254  and  CD_255 
+REMARK   65  A    between atoms: CD_255  and  CE_256 
+REMARK   66  A    between atoms: CA_259  and  CB_262 
+REMARK   67  A    between atoms: CB_262  and  CG_263 
+REMARK   68  A    between atoms: CA_270  and  CB_273 
+REMARK   69  A    between atoms: CB_273  and  CG_274 
+REMARK   70  A    between atoms: CG_274  and  CD_275 
+REMARK   71  A    between atoms: CA_279  and  CB_282 
+REMARK   72  A    between atoms: CA_285  and  CB_288 
+REMARK   73  A    between atoms: CB_288  and  CG_289 
+REMARK   74  A    between atoms: CA_293  and  CB_296 
+REMARK   75  A    between atoms: CB_296  and  CG_297 
+REMARK   76  A    between atoms: CA_304  and  CB_307 
+REMARK   77  A    between atoms: CB_307  and  CG_308 
+REMARK   78  A    between atoms: CA_312  and  CB_315 
+REMARK   79  A    between atoms: CA_319  and  CB_322 
+REMARK   80  A    between atoms: CB_322  and  CG_323 
+REMARK   81  A    between atoms: CG_323  and  CD_324 
+REMARK   82  A    between atoms: CA_333  and  CB_336 
+REMARK   83  A    between atoms: CA_340  and  CB_343 
+REMARK   84  A    between atoms: CB_343  and  CG_344 
+REMARK   85  A    between atoms: CA_348  and  CB_351 
+REMARK   86  A    between atoms: CB_351  and  CG_352 
+REMARK   87  A    between atoms: CG_352  and  CD_353 
+REMARK   88  A    between atoms: CD_353  and  NE_354 
+REMARK       I    between atoms: NE_354  and  CZ_355 
+REMARK   89  A    between atoms: CA_359  and  CB_362 
+REMARK   90  A    between atoms: CB_362  and  CG_363 
+REMARK   91  A    between atoms: CA_367  and  CB_370 
+REMARK   92  A    between atoms: CA_374  and  CB_377 
+REMARK   93  A    between atoms: CB_377  and  CG_378 
+REMARK   94  A    between atoms: CA_386  and  CB_389 
+REMARK   95  A    between atoms: CA_392  and  CB_395 
+REMARK   96  A    between atoms: CA_399  and  CB_402 
+REMARK   97  A    between atoms: CB_402  and  CG_403 
+REMARK   98  A    between atoms: CA_407  and  CB_410 
+REMARK   99  A    between atoms: CB_410  and  CG_411 
+REMARK  100  A    between atoms: CA_423  and  CB_426 
+REMARK  101  A    between atoms: CB_426  and  CG1_427 
+REMARK  102  A    between atoms: CA_431  and  CB_434 
+REMARK  103  A    between atoms: CB_434  and  CG_435 
+REMARK  104  A    between atoms: CA_439  and  CB_442 
+REMARK  105  A    between atoms: CB_442  and  CG_443 
+REMARK  106  A    between atoms: CG_443  and  CD_444 
+REMARK  107  A    between atoms: CA_448  and  CB_451 
+REMARK  108  A    between atoms: CB_451  and  CG1_452 
+REMARK  109  A    between atoms: CA_456  and  CB_459 
+REMARK  110  A    between atoms: CB_459  and  CG_460 
+REMARK  111  A    between atoms: CA_464  and  CB_467 
+REMARK  112  A    between atoms: CA_470  and  CB_473 
+REMARK  113  A    between atoms: CB_473  and  CG_474 
+REMARK  114  A    between atoms: CG_474  and  CD_475 
+REMARK  115  A    between atoms: CD_475  and  NE_476 
+REMARK       I    between atoms: NE_476  and  CZ_477 
+REMARK  116  A    between atoms: CA_481  and  CB_484 
+REMARK  117  A    between atoms: CB_484  and  CG_485 
+REMARK  118  A    between atoms: CA_495  and  CB_498 
+REMARK  119  A    between atoms: CB_498  and  CG_499 
+REMARK  120  A    between atoms: CA_515  and  CB_518 
+REMARK  121  A    between atoms: CB_518  and  CG_519 
+REMARK  122  A    between atoms: CA_523  and  CB_526 
+REMARK  123  A    between atoms: CB_526  and  CG_527 
+REMARK  124  A    between atoms: CA_535  and  CB_538 
+REMARK  125  A    between atoms: CB_538  and  CG_539 
+REMARK  126  A    between atoms: CG_539  and  CD_540 
+REMARK  127  A    between atoms: CD_540  and  NE_541 
+REMARK       I    between atoms: NE_541  and  CZ_542 
+REMARK  128  A    between atoms: CA_546  and  CB_549 
+REMARK  129  A    between atoms: CA_564  and  CB_567 
+REMARK  130  A    between atoms: CA_570  and  CB_573 
+REMARK  131  A    between atoms: CB_573  and  CG_574 
+REMARK  132  A    between atoms: CG_574  and  CD_575 
+REMARK  133  A    between atoms: CD_575  and  NE_576 
+REMARK       I    between atoms: NE_576  and  CZ_577 
+REMARK  134  A    between atoms: CA_581  and  CB_584 
+REMARK  135  A    between atoms: CB_584  and  CG_585 
+REMARK  136  A    between atoms: CA_589  and  CB_592 
+REMARK  137  A    between atoms: CB_592  and  CG_593 
+REMARK  138  A    between atoms: CA_603  and  CB_606 
+REMARK  139  A    between atoms: CB_606  and  CG_607 
+REMARK  140  A    between atoms: CA_611  and  CB_614 
+REMARK  141  A    between atoms: CB_614  and  CG1_615 
+REMARK  142  A    between atoms: CA_632  and  CB_635 
+REMARK  143  A    between atoms: CA_643  and  CB_646 
+REMARK  144  A    between atoms: CB_646  and  CG_647 
+REMARK  145  A    between atoms: CA_651  and  CB_654 
+REMARK  146  A    between atoms: CB_654  and  CG_655 
+REMARK  147  A    between atoms: CA_659  and  CB_662 
+REMARK  148  A    between atoms: CA_665  and  CB_668 
+REMARK  149  A    between atoms: CA_671  and  CB_674 
+REMARK  150  A    between atoms: CB_674  and  CG_675 
+REMARK  151  A    between atoms: CA_679  and  CB_682 
+REMARK  152  A    between atoms: CB_682  and  CG1_683 
+REMARK  153  A    between atoms: CA_687  and  CB_690 
+REMARK  154  A    between atoms: CA_699  and  CB_702 
+REMARK  155  A    between atoms: CA_705  and  CB_708 
+REMARK  156  A    between atoms: CA_712  and  CB_715 
+REMARK  157  A    between atoms: CB_715  and  CG_716 
+REMARK  158  A    between atoms: CA_731  and  CB_734 
+REMARK  159  A    between atoms: CB_734  and  CG_735 
+REMARK  160  A    between atoms: CG_735  and  CD_736 
+REMARK  161  A    between atoms: CD_736  and  CE_737 
+REMARK  162  A    between atoms: CA_740  and  CB_743 
+REMARK  163  A    between atoms: CB_743  and  CG_744 
+REMARK  164  A    between atoms: CG_744  and  CD_745 
+REMARK  165  A    between atoms: CD_745  and  CE_746 
+REMARK  166  A    between atoms: CA_749  and  CB_752 
+REMARK  167  A    between atoms: CB_752  and  CG1_753 
+REMARK  168  A    between atoms: CA_757  and  CB_760 
+REMARK  169  A    between atoms: CA_764  and  CB_767 
+REMARK  170  A    between atoms: CA_770  and  CB_773 
+REMARK  171  A    between atoms: CB_773  and  CG_774 
+REMARK  172  A    between atoms: CA_782  and  CB_785 
+REMARK  173  A    between atoms: CB_785  and  CG_786 
+REMARK  174  A    between atoms: CA_794  and  CB_797 
+REMARK  175  A    between atoms: CB_797  and  CG_798 
+REMARK  176  A    between atoms: CG_798  and  SD_799 
+REMARK  177  A    between atoms: CA_802  and  CB_805 
+REMARK  178  A    between atoms: CB_805  and  CG_806 
+REMARK  179  A    between atoms: CA_815  and  CB_818 
+REMARK  180  A    between atoms: CB_818  and  CG_819 
+REMARK  181  A    between atoms: CA_829  and  CB_832 
+REMARK  182  A    between atoms: CA_841  and  CB_844 
+REMARK  183  A    between atoms: CB_844  and  CG_845 
+REMARK  184  A    between atoms: CA_855  and  CB_858 
+REMARK  185  A    between atoms: CB_858  and  CG_859 
+REMARK  186  A    between atoms: CG_859  and  CD_860 
+REMARK  187  A    between atoms: CD_860  and  NE_861 
+REMARK       I    between atoms: NE_861  and  CZ_862 
+REMARK  188  A    between atoms: CA_866  and  CB_869 
+REMARK  189  A    between atoms: CB_869  and  CG_870 
+REMARK  190  A    between atoms: CA_874  and  CB_877 
+REMARK  191  A    between atoms: CB_877  and  CG_878 
+REMARK  192  A    between atoms: CG_878  and  CD_879 
+REMARK  193  A    between atoms: CD_879  and  NE_880 
+REMARK       I    between atoms: NE_880  and  CZ_881 
+REMARK  194  A    between atoms: CA_891  and  CB_894 
+REMARK  195  A    between atoms: CB_894  and  CG_895 
+REMARK  196  A    between atoms: CG_895  and  CD_896 
+REMARK  197  A    between atoms: CD_896  and  CE_897 
+REMARK  198  A    between atoms: CA_904  and  CB_907 
+REMARK  199  A    between atoms: CA_911  and  CB_914 
+REMARK  200  A    between atoms: CB_914  and  CG_915 
+REMARK  201  A    between atoms: CA_919  and  CB_922 
+REMARK  202  A    between atoms: CA_926  and  CB_929 
+REMARK  203  A    between atoms: CB_929  and  CG_930 
+REMARK  204  A    between atoms: CG_930  and  CD_931 
+REMARK  205  A    between atoms: CA_940  and  CB_943 
+REMARK  206  A    between atoms: CB_943  and  CG_944 
+REMARK  207  A    between atoms: CA_954  and  CB_957 
+REMARK  208  A    between atoms: CB_957  and  CG1_958 
+REMARK  209  A    between atoms: CA_962  and  CB_965 
+REMARK  210  A    between atoms: CB_965  and  CG_966 
+REMARK  211  A    between atoms: CG_966  and  CD_967 
+REMARK  212  A    between atoms: CD_967  and  NE_968 
+REMARK       I    between atoms: NE_968  and  CZ_969 
+REMARK  213  A    between atoms: CA_977  and  C_978 
+REMARK       I    between atoms: C_978  and  N_982 
+REMARK  214  A    between atoms: N_982  and  CA_983 
+REMARK  215  A    between atoms: CA_983  and  C_984 
+REMARK  216  A    between atoms: CA_983  and  CB_986 
+REMARK       I    between atoms: C_984  and  N_993 
+REMARK  217  A    between atoms: CB_986  and  CG_987 
+REMARK  218  A    between atoms: CG_987  and  CD_988 
+REMARK  219  A    between atoms: CD_988  and  NE_989 
+REMARK       I    between atoms: NE_989  and  CZ_990 
+REMARK  220  A    between atoms: N_993  and  CA_994 
+REMARK  221  A    between atoms: CA_994  and  CB_997 
+REMARK  222  A    between atoms: CA_994  and  C_995 
+REMARK  223  A    between atoms: CB_997  and  CG_998 
+COMPND    /mnt/c/Users/Lenovo/Desktop/code/quantum_virus_simulation/data/1aki_docked.pdbqt 
+AUTHOR    GENERATED BY OPEN BABEL 3.1.1
+HETATM    1  O   HOH A 130       8.838   6.606   0.639  1.00  0.00           O  
 MASTER        0    0    0    0    0    0    0    0    1    0    1    0
 ENDMDL
 MODEL        5
 MODEL 5
-REMARK VINA RESULT:    -0.380      7.048      7.048
+REMARK VINA RESULT:    -0.380     10.850     10.850
 REMARK INTER + INTRA:          -0.380
 REMARK INTER:                  -0.380
 REMARK INTRA:                   0.000
@@ -1275,267 +1275,11 @@ REMARK  222  A    between atoms: CA_994  and  C_995
 REMARK  223  A    between atoms: CB_997  and  CG_998 
 COMPND    /mnt/c/Users/Lenovo/Desktop/code/quantum_virus_simulation/data/1aki_docked.pdbqt 
 AUTHOR    GENERATED BY OPEN BABEL 3.1.1
-HETATM    1  O   HOH A 130       7.821   6.365   1.167  1.00  0.00           O  
+HETATM    1  O   HOH A 130      -4.182  10.004  -2.976  1.00  0.00           O  
 MASTER        0    0    0    0    0    0    0    0    1    0    1    0
 ENDMDL
 MODEL        6
 MODEL 6
-REMARK VINA RESULT:    -0.373     10.411     10.411
-REMARK INTER + INTRA:          -0.373
-REMARK INTER:                  -0.373
-REMARK INTRA:                   0.000
-REMARK UNBOUND:                 0.000
-REMARK WARNING: 32 MAX_TORS EXCEEDED!!!
-REMARK  223 active torsions:
-REMARK  status: ('A' for Active; 'I' for Inactive)
-REMARK    1  A    between atoms: CA_2  and  C_3 
-REMARK    2  A    between atoms: CA_2  and  CB_5 
-REMARK       I    between atoms: C_3  and  N_10 
-REMARK    3  A    between atoms: CB_5  and  CG_6 
-REMARK    4  A    between atoms: CG_6  and  CD_7 
-REMARK    5  A    between atoms: CD_7  and  CE_8 
-REMARK    6  A    between atoms: N_10  and  CA_11 
-REMARK    7  A    between atoms: CA_11  and  C_12 
-REMARK    8  A    between atoms: CA_11  and  CB_14 
-REMARK       I    between atoms: C_12  and  N_17 
-REMARK    9  A    between atoms: N_17  and  CA_18 
-REMARK   10  A    between atoms: CA_18  and  C_19 
-REMARK   11  A    between atoms: CA_18  and  CB_21 
-REMARK       I    between atoms: C_19  and  N_28 
-REMARK   12  A    between atoms: CB_21  and  CG_22 
-REMARK   13  A    between atoms: N_28  and  CA_29 
-REMARK   14  A    between atoms: CA_29  and  C_30 
-REMARK       I    between atoms: C_30  and  N_32 
-REMARK   15  A    between atoms: N_32  and  CA_33 
-REMARK   16  A    between atoms: CA_33  and  CB_36 
-REMARK   17  A    between atoms: CA_33  and  C_34 
-REMARK       I    between atoms: C_34  and  N_43 
-REMARK   18  A    between atoms: CB_36  and  CG_37 
-REMARK   19  A    between atoms: CG_37  and  CD_38 
-REMARK   20  A    between atoms: CD_38  and  NE_39 
-REMARK       I    between atoms: NE_39  and  CZ_40 
-REMARK   21  A    between atoms: N_43  and  CA_44 
-REMARK   22  A    between atoms: CA_50  and  CB_53 
-REMARK   23  A    between atoms: CB_53  and  CG_54 
-REMARK   24  A    between atoms: CG_54  and  CD_55 
-REMARK   25  A    between atoms: CA_59  and  CB_62 
-REMARK   26  A    between atoms: CB_62  and  CG_63 
-REMARK   27  A    between atoms: CA_82  and  CB_85 
-REMARK   28  A    between atoms: CB_85  and  CG_86 
-REMARK   29  A    between atoms: CG_86  and  SD_87 
-REMARK   30  A    between atoms: CA_90  and  CB_93 
-REMARK   31  A    between atoms: CB_93  and  CG_94 
-REMARK   32  A    between atoms: CG_94  and  CD_95 
-REMARK   33  A    between atoms: CD_95  and  CE_96 
-REMARK   34  A    between atoms: CA_99  and  CB_102 
-REMARK   35  A    between atoms: CB_102  and  CG_103 
-REMARK   36  A    between atoms: CG_103  and  CD_104 
-REMARK   37  A    between atoms: CD_104  and  NE_105 
-REMARK       I    between atoms: NE_105  and  CZ_106 
-REMARK   38  A    between atoms: CA_110  and  CB_113 
-REMARK   39  A    between atoms: CB_113  and  CG_114 
-REMARK   40  A    between atoms: CA_124  and  CB_127 
-REMARK   41  A    between atoms: CB_127  and  CG_128 
-REMARK   42  A    between atoms: CA_132  and  CB_135 
-REMARK   43  A    between atoms: CB_135  and  CG_136 
-REMARK   44  A    between atoms: CA_140  and  CB_143 
-REMARK   45  A    between atoms: CB_143  and  CG_144 
-REMARK   46  A    between atoms: CA_148  and  CB_151 
-REMARK   47  A    between atoms: CB_151  and  CG_152 
-REMARK   48  A    between atoms: CA_160  and  CB_163 
-REMARK   49  A    between atoms: CB_163  and  CG_164 
-REMARK   50  A    between atoms: CG_164  and  CD_165 
-REMARK   51  A    between atoms: CD_165  and  NE_166 
-REMARK       I    between atoms: NE_166  and  CZ_167 
-REMARK   52  A    between atoms: CA_175  and  CB_178 
-REMARK   53  A    between atoms: CB_178  and  CG_179 
-REMARK   54  A    between atoms: CA_187  and  CB_190 
-REMARK   55  A    between atoms: CA_193  and  CB_196 
-REMARK   56  A    between atoms: CB_196  and  CG_197 
-REMARK   57  A    between atoms: CA_205  and  CB_208 
-REMARK   58  A    between atoms: CB_208  and  CG_209 
-REMARK   59  A    between atoms: CA_213  and  CB_216 
-REMARK   60  A    between atoms: CB_216  and  CG_217 
-REMARK   61  A    between atoms: CA_227  and  CB_230 
-REMARK   62  A    between atoms: CA_250  and  CB_253 
-REMARK   63  A    between atoms: CB_253  and  CG_254 
-REMARK   64  A    between atoms: CG_254  and  CD_255 
-REMARK   65  A    between atoms: CD_255  and  CE_256 
-REMARK   66  A    between atoms: CA_259  and  CB_262 
-REMARK   67  A    between atoms: CB_262  and  CG_263 
-REMARK   68  A    between atoms: CA_270  and  CB_273 
-REMARK   69  A    between atoms: CB_273  and  CG_274 
-REMARK   70  A    between atoms: CG_274  and  CD_275 
-REMARK   71  A    between atoms: CA_279  and  CB_282 
-REMARK   72  A    between atoms: CA_285  and  CB_288 
-REMARK   73  A    between atoms: CB_288  and  CG_289 
-REMARK   74  A    between atoms: CA_293  and  CB_296 
-REMARK   75  A    between atoms: CB_296  and  CG_297 
-REMARK   76  A    between atoms: CA_304  and  CB_307 
-REMARK   77  A    between atoms: CB_307  and  CG_308 
-REMARK   78  A    between atoms: CA_312  and  CB_315 
-REMARK   79  A    between atoms: CA_319  and  CB_322 
-REMARK   80  A    between atoms: CB_322  and  CG_323 
-REMARK   81  A    between atoms: CG_323  and  CD_324 
-REMARK   82  A    between atoms: CA_333  and  CB_336 
-REMARK   83  A    between atoms: CA_340  and  CB_343 
-REMARK   84  A    between atoms: CB_343  and  CG_344 
-REMARK   85  A    between atoms: CA_348  and  CB_351 
-REMARK   86  A    between atoms: CB_351  and  CG_352 
-REMARK   87  A    between atoms: CG_352  and  CD_353 
-REMARK   88  A    between atoms: CD_353  and  NE_354 
-REMARK       I    between atoms: NE_354  and  CZ_355 
-REMARK   89  A    between atoms: CA_359  and  CB_362 
-REMARK   90  A    between atoms: CB_362  and  CG_363 
-REMARK   91  A    between atoms: CA_367  and  CB_370 
-REMARK   92  A    between atoms: CA_374  and  CB_377 
-REMARK   93  A    between atoms: CB_377  and  CG_378 
-REMARK   94  A    between atoms: CA_386  and  CB_389 
-REMARK   95  A    between atoms: CA_392  and  CB_395 
-REMARK   96  A    between atoms: CA_399  and  CB_402 
-REMARK   97  A    between atoms: CB_402  and  CG_403 
-REMARK   98  A    between atoms: CA_407  and  CB_410 
-REMARK   99  A    between atoms: CB_410  and  CG_411 
-REMARK  100  A    between atoms: CA_423  and  CB_426 
-REMARK  101  A    between atoms: CB_426  and  CG1_427 
-REMARK  102  A    between atoms: CA_431  and  CB_434 
-REMARK  103  A    between atoms: CB_434  and  CG_435 
-REMARK  104  A    between atoms: CA_439  and  CB_442 
-REMARK  105  A    between atoms: CB_442  and  CG_443 
-REMARK  106  A    between atoms: CG_443  and  CD_444 
-REMARK  107  A    between atoms: CA_448  and  CB_451 
-REMARK  108  A    between atoms: CB_451  and  CG1_452 
-REMARK  109  A    between atoms: CA_456  and  CB_459 
-REMARK  110  A    between atoms: CB_459  and  CG_460 
-REMARK  111  A    between atoms: CA_464  and  CB_467 
-REMARK  112  A    between atoms: CA_470  and  CB_473 
-REMARK  113  A    between atoms: CB_473  and  CG_474 
-REMARK  114  A    between atoms: CG_474  and  CD_475 
-REMARK  115  A    between atoms: CD_475  and  NE_476 
-REMARK       I    between atoms: NE_476  and  CZ_477 
-REMARK  116  A    between atoms: CA_481  and  CB_484 
-REMARK  117  A    between atoms: CB_484  and  CG_485 
-REMARK  118  A    between atoms: CA_495  and  CB_498 
-REMARK  119  A    between atoms: CB_498  and  CG_499 
-REMARK  120  A    between atoms: CA_515  and  CB_518 
-REMARK  121  A    between atoms: CB_518  and  CG_519 
-REMARK  122  A    between atoms: CA_523  and  CB_526 
-REMARK  123  A    between atoms: CB_526  and  CG_527 
-REMARK  124  A    between atoms: CA_535  and  CB_538 
-REMARK  125  A    between atoms: CB_538  and  CG_539 
-REMARK  126  A    between atoms: CG_539  and  CD_540 
-REMARK  127  A    between atoms: CD_540  and  NE_541 
-REMARK       I    between atoms: NE_541  and  CZ_542 
-REMARK  128  A    between atoms: CA_546  and  CB_549 
-REMARK  129  A    between atoms: CA_564  and  CB_567 
-REMARK  130  A    between atoms: CA_570  and  CB_573 
-REMARK  131  A    between atoms: CB_573  and  CG_574 
-REMARK  132  A    between atoms: CG_574  and  CD_575 
-REMARK  133  A    between atoms: CD_575  and  NE_576 
-REMARK       I    between atoms: NE_576  and  CZ_577 
-REMARK  134  A    between atoms: CA_581  and  CB_584 
-REMARK  135  A    between atoms: CB_584  and  CG_585 
-REMARK  136  A    between atoms: CA_589  and  CB_592 
-REMARK  137  A    between atoms: CB_592  and  CG_593 
-REMARK  138  A    between atoms: CA_603  and  CB_606 
-REMARK  139  A    between atoms: CB_606  and  CG_607 
-REMARK  140  A    between atoms: CA_611  and  CB_614 
-REMARK  141  A    between atoms: CB_614  and  CG1_615 
-REMARK  142  A    between atoms: CA_632  and  CB_635 
-REMARK  143  A    between atoms: CA_643  and  CB_646 
-REMARK  144  A    between atoms: CB_646  and  CG_647 
-REMARK  145  A    between atoms: CA_651  and  CB_654 
-REMARK  146  A    between atoms: CB_654  and  CG_655 
-REMARK  147  A    between atoms: CA_659  and  CB_662 
-REMARK  148  A    between atoms: CA_665  and  CB_668 
-REMARK  149  A    between atoms: CA_671  and  CB_674 
-REMARK  150  A    between atoms: CB_674  and  CG_675 
-REMARK  151  A    between atoms: CA_679  and  CB_682 
-REMARK  152  A    between atoms: CB_682  and  CG1_683 
-REMARK  153  A    between atoms: CA_687  and  CB_690 
-REMARK  154  A    between atoms: CA_699  and  CB_702 
-REMARK  155  A    between atoms: CA_705  and  CB_708 
-REMARK  156  A    between atoms: CA_712  and  CB_715 
-REMARK  157  A    between atoms: CB_715  and  CG_716 
-REMARK  158  A    between atoms: CA_731  and  CB_734 
-REMARK  159  A    between atoms: CB_734  and  CG_735 
-REMARK  160  A    between atoms: CG_735  and  CD_736 
-REMARK  161  A    between atoms: CD_736  and  CE_737 
-REMARK  162  A    between atoms: CA_740  and  CB_743 
-REMARK  163  A    between atoms: CB_743  and  CG_744 
-REMARK  164  A    between atoms: CG_744  and  CD_745 
-REMARK  165  A    between atoms: CD_745  and  CE_746 
-REMARK  166  A    between atoms: CA_749  and  CB_752 
-REMARK  167  A    between atoms: CB_752  and  CG1_753 
-REMARK  168  A    between atoms: CA_757  and  CB_760 
-REMARK  169  A    between atoms: CA_764  and  CB_767 
-REMARK  170  A    between atoms: CA_770  and  CB_773 
-REMARK  171  A    between atoms: CB_773  and  CG_774 
-REMARK  172  A    between atoms: CA_782  and  CB_785 
-REMARK  173  A    between atoms: CB_785  and  CG_786 
-REMARK  174  A    between atoms: CA_794  and  CB_797 
-REMARK  175  A    between atoms: CB_797  and  CG_798 
-REMARK  176  A    between atoms: CG_798  and  SD_799 
-REMARK  177  A    between atoms: CA_802  and  CB_805 
-REMARK  178  A    between atoms: CB_805  and  CG_806 
-REMARK  179  A    between atoms: CA_815  and  CB_818 
-REMARK  180  A    between atoms: CB_818  and  CG_819 
-REMARK  181  A    between atoms: CA_829  and  CB_832 
-REMARK  182  A    between atoms: CA_841  and  CB_844 
-REMARK  183  A    between atoms: CB_844  and  CG_845 
-REMARK  184  A    between atoms: CA_855  and  CB_858 
-REMARK  185  A    between atoms: CB_858  and  CG_859 
-REMARK  186  A    between atoms: CG_859  and  CD_860 
-REMARK  187  A    between atoms: CD_860  and  NE_861 
-REMARK       I    between atoms: NE_861  and  CZ_862 
-REMARK  188  A    between atoms: CA_866  and  CB_869 
-REMARK  189  A    between atoms: CB_869  and  CG_870 
-REMARK  190  A    between atoms: CA_874  and  CB_877 
-REMARK  191  A    between atoms: CB_877  and  CG_878 
-REMARK  192  A    between atoms: CG_878  and  CD_879 
-REMARK  193  A    between atoms: CD_879  and  NE_880 
-REMARK       I    between atoms: NE_880  and  CZ_881 
-REMARK  194  A    between atoms: CA_891  and  CB_894 
-REMARK  195  A    between atoms: CB_894  and  CG_895 
-REMARK  196  A    between atoms: CG_895  and  CD_896 
-REMARK  197  A    between atoms: CD_896  and  CE_897 
-REMARK  198  A    between atoms: CA_904  and  CB_907 
-REMARK  199  A    between atoms: CA_911  and  CB_914 
-REMARK  200  A    between atoms: CB_914  and  CG_915 
-REMARK  201  A    between atoms: CA_919  and  CB_922 
-REMARK  202  A    between atoms: CA_926  and  CB_929 
-REMARK  203  A    between atoms: CB_929  and  CG_930 
-REMARK  204  A    between atoms: CG_930  and  CD_931 
-REMARK  205  A    between atoms: CA_940  and  CB_943 
-REMARK  206  A    between atoms: CB_943  and  CG_944 
-REMARK  207  A    between atoms: CA_954  and  CB_957 
-REMARK  208  A    between atoms: CB_957  and  CG1_958 
-REMARK  209  A    between atoms: CA_962  and  CB_965 
-REMARK  210  A    between atoms: CB_965  and  CG_966 
-REMARK  211  A    between atoms: CG_966  and  CD_967 
-REMARK  212  A    between atoms: CD_967  and  NE_968 
-REMARK       I    between atoms: NE_968  and  CZ_969 
-REMARK  213  A    between atoms: CA_977  and  C_978 
-REMARK       I    between atoms: C_978  and  N_982 
-REMARK  214  A    between atoms: N_982  and  CA_983 
-REMARK  215  A    between atoms: CA_983  and  C_984 
-REMARK  216  A    between atoms: CA_983  and  CB_986 
-REMARK       I    between atoms: C_984  and  N_993 
-REMARK  217  A    between atoms: CB_986  and  CG_987 
-REMARK  218  A    between atoms: CG_987  and  CD_988 
-REMARK  219  A    between atoms: CD_988  and  NE_989 
-REMARK       I    between atoms: NE_989  and  CZ_990 
-REMARK  220  A    between atoms: N_993  and  CA_994 
-REMARK  221  A    between atoms: CA_994  and  CB_997 
-REMARK  222  A    between atoms: CA_994  and  C_995 
-REMARK  223  A    between atoms: CB_997  and  CG_998 
-COMPND    /mnt/c/Users/Lenovo/Desktop/code/quantum_virus_simulation/data/1aki_docked.pdbqt 
-AUTHOR    GENERATED BY OPEN BABEL 3.1.1
-HETATM    1  O   HOH A 130      -0.598   9.386   2.191  1.00  0.00           O  
-MASTER        0    0    0    0    0    0    0    0    1    0    1    0
-ENDMDL
-MODEL        7
-MODEL 7
 REMARK VINA RESULT:    -0.359      9.351      9.351
 REMARK INTER + INTRA:          -0.359
 REMARK INTER:                  -0.359
@@ -1790,11 +1534,11 @@ AUTHOR    GENERATED BY OPEN BABEL 3.1.1
 HETATM    1  O   HOH A 130       6.636   7.990   3.533  1.00  0.00           O  
 MASTER        0    0    0    0    0    0    0    0    1    0    1    0
 ENDMDL
-MODEL        8
-MODEL 8
-REMARK VINA RESULT:    -0.341      5.886      5.886
-REMARK INTER + INTRA:          -0.341
-REMARK INTER:                  -0.341
+MODEL        7
+MODEL 7
+REMARK VINA RESULT:    -0.337      2.400      2.400
+REMARK INTER + INTRA:          -0.337
+REMARK INTER:                  -0.337
 REMARK INTRA:                   0.000
 REMARK UNBOUND:                 0.000
 REMARK WARNING: 32 MAX_TORS EXCEEDED!!!
@@ -2043,14 +1787,270 @@ REMARK  222  A    between atoms: CA_994  and  C_995
 REMARK  223  A    between atoms: CB_997  and  CG_998 
 COMPND    /mnt/c/Users/Lenovo/Desktop/code/quantum_virus_simulation/data/1aki_docked.pdbqt 
 AUTHOR    GENERATED BY OPEN BABEL 3.1.1
-HETATM    1  O   HOH A 130       9.341   2.132  -8.179  1.00  0.00           O  
+HETATM    1  O   HOH A 130       3.152   4.847  -6.065  1.00  0.00           O  
+MASTER        0    0    0    0    0    0    0    0    1    0    1    0
+ENDMDL
+MODEL        8
+MODEL 8
+REMARK VINA RESULT:    -0.271      3.757      3.757
+REMARK INTER + INTRA:          -0.271
+REMARK INTER:                  -0.271
+REMARK INTRA:                   0.000
+REMARK UNBOUND:                 0.000
+REMARK WARNING: 32 MAX_TORS EXCEEDED!!!
+REMARK  223 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: CA_2  and  C_3 
+REMARK    2  A    between atoms: CA_2  and  CB_5 
+REMARK       I    between atoms: C_3  and  N_10 
+REMARK    3  A    between atoms: CB_5  and  CG_6 
+REMARK    4  A    between atoms: CG_6  and  CD_7 
+REMARK    5  A    between atoms: CD_7  and  CE_8 
+REMARK    6  A    between atoms: N_10  and  CA_11 
+REMARK    7  A    between atoms: CA_11  and  C_12 
+REMARK    8  A    between atoms: CA_11  and  CB_14 
+REMARK       I    between atoms: C_12  and  N_17 
+REMARK    9  A    between atoms: N_17  and  CA_18 
+REMARK   10  A    between atoms: CA_18  and  C_19 
+REMARK   11  A    between atoms: CA_18  and  CB_21 
+REMARK       I    between atoms: C_19  and  N_28 
+REMARK   12  A    between atoms: CB_21  and  CG_22 
+REMARK   13  A    between atoms: N_28  and  CA_29 
+REMARK   14  A    between atoms: CA_29  and  C_30 
+REMARK       I    between atoms: C_30  and  N_32 
+REMARK   15  A    between atoms: N_32  and  CA_33 
+REMARK   16  A    between atoms: CA_33  and  CB_36 
+REMARK   17  A    between atoms: CA_33  and  C_34 
+REMARK       I    between atoms: C_34  and  N_43 
+REMARK   18  A    between atoms: CB_36  and  CG_37 
+REMARK   19  A    between atoms: CG_37  and  CD_38 
+REMARK   20  A    between atoms: CD_38  and  NE_39 
+REMARK       I    between atoms: NE_39  and  CZ_40 
+REMARK   21  A    between atoms: N_43  and  CA_44 
+REMARK   22  A    between atoms: CA_50  and  CB_53 
+REMARK   23  A    between atoms: CB_53  and  CG_54 
+REMARK   24  A    between atoms: CG_54  and  CD_55 
+REMARK   25  A    between atoms: CA_59  and  CB_62 
+REMARK   26  A    between atoms: CB_62  and  CG_63 
+REMARK   27  A    between atoms: CA_82  and  CB_85 
+REMARK   28  A    between atoms: CB_85  and  CG_86 
+REMARK   29  A    between atoms: CG_86  and  SD_87 
+REMARK   30  A    between atoms: CA_90  and  CB_93 
+REMARK   31  A    between atoms: CB_93  and  CG_94 
+REMARK   32  A    between atoms: CG_94  and  CD_95 
+REMARK   33  A    between atoms: CD_95  and  CE_96 
+REMARK   34  A    between atoms: CA_99  and  CB_102 
+REMARK   35  A    between atoms: CB_102  and  CG_103 
+REMARK   36  A    between atoms: CG_103  and  CD_104 
+REMARK   37  A    between atoms: CD_104  and  NE_105 
+REMARK       I    between atoms: NE_105  and  CZ_106 
+REMARK   38  A    between atoms: CA_110  and  CB_113 
+REMARK   39  A    between atoms: CB_113  and  CG_114 
+REMARK   40  A    between atoms: CA_124  and  CB_127 
+REMARK   41  A    between atoms: CB_127  and  CG_128 
+REMARK   42  A    between atoms: CA_132  and  CB_135 
+REMARK   43  A    between atoms: CB_135  and  CG_136 
+REMARK   44  A    between atoms: CA_140  and  CB_143 
+REMARK   45  A    between atoms: CB_143  and  CG_144 
+REMARK   46  A    between atoms: CA_148  and  CB_151 
+REMARK   47  A    between atoms: CB_151  and  CG_152 
+REMARK   48  A    between atoms: CA_160  and  CB_163 
+REMARK   49  A    between atoms: CB_163  and  CG_164 
+REMARK   50  A    between atoms: CG_164  and  CD_165 
+REMARK   51  A    between atoms: CD_165  and  NE_166 
+REMARK       I    between atoms: NE_166  and  CZ_167 
+REMARK   52  A    between atoms: CA_175  and  CB_178 
+REMARK   53  A    between atoms: CB_178  and  CG_179 
+REMARK   54  A    between atoms: CA_187  and  CB_190 
+REMARK   55  A    between atoms: CA_193  and  CB_196 
+REMARK   56  A    between atoms: CB_196  and  CG_197 
+REMARK   57  A    between atoms: CA_205  and  CB_208 
+REMARK   58  A    between atoms: CB_208  and  CG_209 
+REMARK   59  A    between atoms: CA_213  and  CB_216 
+REMARK   60  A    between atoms: CB_216  and  CG_217 
+REMARK   61  A    between atoms: CA_227  and  CB_230 
+REMARK   62  A    between atoms: CA_250  and  CB_253 
+REMARK   63  A    between atoms: CB_253  and  CG_254 
+REMARK   64  A    between atoms: CG_254  and  CD_255 
+REMARK   65  A    between atoms: CD_255  and  CE_256 
+REMARK   66  A    between atoms: CA_259  and  CB_262 
+REMARK   67  A    between atoms: CB_262  and  CG_263 
+REMARK   68  A    between atoms: CA_270  and  CB_273 
+REMARK   69  A    between atoms: CB_273  and  CG_274 
+REMARK   70  A    between atoms: CG_274  and  CD_275 
+REMARK   71  A    between atoms: CA_279  and  CB_282 
+REMARK   72  A    between atoms: CA_285  and  CB_288 
+REMARK   73  A    between atoms: CB_288  and  CG_289 
+REMARK   74  A    between atoms: CA_293  and  CB_296 
+REMARK   75  A    between atoms: CB_296  and  CG_297 
+REMARK   76  A    between atoms: CA_304  and  CB_307 
+REMARK   77  A    between atoms: CB_307  and  CG_308 
+REMARK   78  A    between atoms: CA_312  and  CB_315 
+REMARK   79  A    between atoms: CA_319  and  CB_322 
+REMARK   80  A    between atoms: CB_322  and  CG_323 
+REMARK   81  A    between atoms: CG_323  and  CD_324 
+REMARK   82  A    between atoms: CA_333  and  CB_336 
+REMARK   83  A    between atoms: CA_340  and  CB_343 
+REMARK   84  A    between atoms: CB_343  and  CG_344 
+REMARK   85  A    between atoms: CA_348  and  CB_351 
+REMARK   86  A    between atoms: CB_351  and  CG_352 
+REMARK   87  A    between atoms: CG_352  and  CD_353 
+REMARK   88  A    between atoms: CD_353  and  NE_354 
+REMARK       I    between atoms: NE_354  and  CZ_355 
+REMARK   89  A    between atoms: CA_359  and  CB_362 
+REMARK   90  A    between atoms: CB_362  and  CG_363 
+REMARK   91  A    between atoms: CA_367  and  CB_370 
+REMARK   92  A    between atoms: CA_374  and  CB_377 
+REMARK   93  A    between atoms: CB_377  and  CG_378 
+REMARK   94  A    between atoms: CA_386  and  CB_389 
+REMARK   95  A    between atoms: CA_392  and  CB_395 
+REMARK   96  A    between atoms: CA_399  and  CB_402 
+REMARK   97  A    between atoms: CB_402  and  CG_403 
+REMARK   98  A    between atoms: CA_407  and  CB_410 
+REMARK   99  A    between atoms: CB_410  and  CG_411 
+REMARK  100  A    between atoms: CA_423  and  CB_426 
+REMARK  101  A    between atoms: CB_426  and  CG1_427 
+REMARK  102  A    between atoms: CA_431  and  CB_434 
+REMARK  103  A    between atoms: CB_434  and  CG_435 
+REMARK  104  A    between atoms: CA_439  and  CB_442 
+REMARK  105  A    between atoms: CB_442  and  CG_443 
+REMARK  106  A    between atoms: CG_443  and  CD_444 
+REMARK  107  A    between atoms: CA_448  and  CB_451 
+REMARK  108  A    between atoms: CB_451  and  CG1_452 
+REMARK  109  A    between atoms: CA_456  and  CB_459 
+REMARK  110  A    between atoms: CB_459  and  CG_460 
+REMARK  111  A    between atoms: CA_464  and  CB_467 
+REMARK  112  A    between atoms: CA_470  and  CB_473 
+REMARK  113  A    between atoms: CB_473  and  CG_474 
+REMARK  114  A    between atoms: CG_474  and  CD_475 
+REMARK  115  A    between atoms: CD_475  and  NE_476 
+REMARK       I    between atoms: NE_476  and  CZ_477 
+REMARK  116  A    between atoms: CA_481  and  CB_484 
+REMARK  117  A    between atoms: CB_484  and  CG_485 
+REMARK  118  A    between atoms: CA_495  and  CB_498 
+REMARK  119  A    between atoms: CB_498  and  CG_499 
+REMARK  120  A    between atoms: CA_515  and  CB_518 
+REMARK  121  A    between atoms: CB_518  and  CG_519 
+REMARK  122  A    between atoms: CA_523  and  CB_526 
+REMARK  123  A    between atoms: CB_526  and  CG_527 
+REMARK  124  A    between atoms: CA_535  and  CB_538 
+REMARK  125  A    between atoms: CB_538  and  CG_539 
+REMARK  126  A    between atoms: CG_539  and  CD_540 
+REMARK  127  A    between atoms: CD_540  and  NE_541 
+REMARK       I    between atoms: NE_541  and  CZ_542 
+REMARK  128  A    between atoms: CA_546  and  CB_549 
+REMARK  129  A    between atoms: CA_564  and  CB_567 
+REMARK  130  A    between atoms: CA_570  and  CB_573 
+REMARK  131  A    between atoms: CB_573  and  CG_574 
+REMARK  132  A    between atoms: CG_574  and  CD_575 
+REMARK  133  A    between atoms: CD_575  and  NE_576 
+REMARK       I    between atoms: NE_576  and  CZ_577 
+REMARK  134  A    between atoms: CA_581  and  CB_584 
+REMARK  135  A    between atoms: CB_584  and  CG_585 
+REMARK  136  A    between atoms: CA_589  and  CB_592 
+REMARK  137  A    between atoms: CB_592  and  CG_593 
+REMARK  138  A    between atoms: CA_603  and  CB_606 
+REMARK  139  A    between atoms: CB_606  and  CG_607 
+REMARK  140  A    between atoms: CA_611  and  CB_614 
+REMARK  141  A    between atoms: CB_614  and  CG1_615 
+REMARK  142  A    between atoms: CA_632  and  CB_635 
+REMARK  143  A    between atoms: CA_643  and  CB_646 
+REMARK  144  A    between atoms: CB_646  and  CG_647 
+REMARK  145  A    between atoms: CA_651  and  CB_654 
+REMARK  146  A    between atoms: CB_654  and  CG_655 
+REMARK  147  A    between atoms: CA_659  and  CB_662 
+REMARK  148  A    between atoms: CA_665  and  CB_668 
+REMARK  149  A    between atoms: CA_671  and  CB_674 
+REMARK  150  A    between atoms: CB_674  and  CG_675 
+REMARK  151  A    between atoms: CA_679  and  CB_682 
+REMARK  152  A    between atoms: CB_682  and  CG1_683 
+REMARK  153  A    between atoms: CA_687  and  CB_690 
+REMARK  154  A    between atoms: CA_699  and  CB_702 
+REMARK  155  A    between atoms: CA_705  and  CB_708 
+REMARK  156  A    between atoms: CA_712  and  CB_715 
+REMARK  157  A    between atoms: CB_715  and  CG_716 
+REMARK  158  A    between atoms: CA_731  and  CB_734 
+REMARK  159  A    between atoms: CB_734  and  CG_735 
+REMARK  160  A    between atoms: CG_735  and  CD_736 
+REMARK  161  A    between atoms: CD_736  and  CE_737 
+REMARK  162  A    between atoms: CA_740  and  CB_743 
+REMARK  163  A    between atoms: CB_743  and  CG_744 
+REMARK  164  A    between atoms: CG_744  and  CD_745 
+REMARK  165  A    between atoms: CD_745  and  CE_746 
+REMARK  166  A    between atoms: CA_749  and  CB_752 
+REMARK  167  A    between atoms: CB_752  and  CG1_753 
+REMARK  168  A    between atoms: CA_757  and  CB_760 
+REMARK  169  A    between atoms: CA_764  and  CB_767 
+REMARK  170  A    between atoms: CA_770  and  CB_773 
+REMARK  171  A    between atoms: CB_773  and  CG_774 
+REMARK  172  A    between atoms: CA_782  and  CB_785 
+REMARK  173  A    between atoms: CB_785  and  CG_786 
+REMARK  174  A    between atoms: CA_794  and  CB_797 
+REMARK  175  A    between atoms: CB_797  and  CG_798 
+REMARK  176  A    between atoms: CG_798  and  SD_799 
+REMARK  177  A    between atoms: CA_802  and  CB_805 
+REMARK  178  A    between atoms: CB_805  and  CG_806 
+REMARK  179  A    between atoms: CA_815  and  CB_818 
+REMARK  180  A    between atoms: CB_818  and  CG_819 
+REMARK  181  A    between atoms: CA_829  and  CB_832 
+REMARK  182  A    between atoms: CA_841  and  CB_844 
+REMARK  183  A    between atoms: CB_844  and  CG_845 
+REMARK  184  A    between atoms: CA_855  and  CB_858 
+REMARK  185  A    between atoms: CB_858  and  CG_859 
+REMARK  186  A    between atoms: CG_859  and  CD_860 
+REMARK  187  A    between atoms: CD_860  and  NE_861 
+REMARK       I    between atoms: NE_861  and  CZ_862 
+REMARK  188  A    between atoms: CA_866  and  CB_869 
+REMARK  189  A    between atoms: CB_869  and  CG_870 
+REMARK  190  A    between atoms: CA_874  and  CB_877 
+REMARK  191  A    between atoms: CB_877  and  CG_878 
+REMARK  192  A    between atoms: CG_878  and  CD_879 
+REMARK  193  A    between atoms: CD_879  and  NE_880 
+REMARK       I    between atoms: NE_880  and  CZ_881 
+REMARK  194  A    between atoms: CA_891  and  CB_894 
+REMARK  195  A    between atoms: CB_894  and  CG_895 
+REMARK  196  A    between atoms: CG_895  and  CD_896 
+REMARK  197  A    between atoms: CD_896  and  CE_897 
+REMARK  198  A    between atoms: CA_904  and  CB_907 
+REMARK  199  A    between atoms: CA_911  and  CB_914 
+REMARK  200  A    between atoms: CB_914  and  CG_915 
+REMARK  201  A    between atoms: CA_919  and  CB_922 
+REMARK  202  A    between atoms: CA_926  and  CB_929 
+REMARK  203  A    between atoms: CB_929  and  CG_930 
+REMARK  204  A    between atoms: CG_930  and  CD_931 
+REMARK  205  A    between atoms: CA_940  and  CB_943 
+REMARK  206  A    between atoms: CB_943  and  CG_944 
+REMARK  207  A    between atoms: CA_954  and  CB_957 
+REMARK  208  A    between atoms: CB_957  and  CG1_958 
+REMARK  209  A    between atoms: CA_962  and  CB_965 
+REMARK  210  A    between atoms: CB_965  and  CG_966 
+REMARK  211  A    between atoms: CG_966  and  CD_967 
+REMARK  212  A    between atoms: CD_967  and  NE_968 
+REMARK       I    between atoms: NE_968  and  CZ_969 
+REMARK  213  A    between atoms: CA_977  and  C_978 
+REMARK       I    between atoms: C_978  and  N_982 
+REMARK  214  A    between atoms: N_982  and  CA_983 
+REMARK  215  A    between atoms: CA_983  and  C_984 
+REMARK  216  A    between atoms: CA_983  and  CB_986 
+REMARK       I    between atoms: C_984  and  N_993 
+REMARK  217  A    between atoms: CB_986  and  CG_987 
+REMARK  218  A    between atoms: CG_987  and  CD_988 
+REMARK  219  A    between atoms: CD_988  and  NE_989 
+REMARK       I    between atoms: NE_989  and  CZ_990 
+REMARK  220  A    between atoms: N_993  and  CA_994 
+REMARK  221  A    between atoms: CA_994  and  CB_997 
+REMARK  222  A    between atoms: CA_994  and  C_995 
+REMARK  223  A    between atoms: CB_997  and  CG_998 
+COMPND    /mnt/c/Users/Lenovo/Desktop/code/quantum_virus_simulation/data/1aki_docked.pdbqt 
+AUTHOR    GENERATED BY OPEN BABEL 3.1.1
+HETATM    1  O   HOH A 130       2.968   4.718  -8.172  1.00  0.00           O  
 MASTER        0    0    0    0    0    0    0    0    1    0    1    0
 ENDMDL
 MODEL        9
 MODEL 9
-REMARK VINA RESULT:    -0.338      2.403      2.403
-REMARK INTER + INTRA:          -0.338
-REMARK INTER:                  -0.338
+REMARK VINA RESULT:    -0.261      4.989      4.989
+REMARK INTER + INTRA:          -0.261
+REMARK INTER:                  -0.261
 REMARK INTRA:                   0.000
 REMARK UNBOUND:                 0.000
 REMARK WARNING: 32 MAX_TORS EXCEEDED!!!
@@ -2299,7 +2299,7 @@ REMARK  222  A    between atoms: CA_994  and  C_995
 REMARK  223  A    between atoms: CB_997  and  CG_998 
 COMPND    /mnt/c/Users/Lenovo/Desktop/code/quantum_virus_simulation/data/1aki_docked.pdbqt 
 AUTHOR    GENERATED BY OPEN BABEL 3.1.1
-HETATM    1  O   HOH A 130       3.148   4.857  -6.073  1.00  0.00           O  
+HETATM    1  O   HOH A 130       1.061   4.639  -2.999  1.00  0.00           O  
 MASTER        0    0    0    0    0    0    0    0    1    0    1    0
 ENDMDL
 END

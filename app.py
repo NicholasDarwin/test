@@ -71,7 +71,7 @@ def run_pipeline():
         logging.debug(f"Docking results: {docking_results}")
 
         # Extract top ligands from docking results
-        top_ligands = [result['output'] for result in docking_results]
+        top_ligands = [result['pdb_output'] for result in docking_results]
         logging.debug(f"Top ligands: {top_ligands}")
 
         # Step 2: Run molecular dynamics simulations for top ligands
