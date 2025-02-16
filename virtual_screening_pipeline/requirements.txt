@@ -1,0 +1,9 @@
+AutoDock-Vina
+GROMACS
+numpy
+pandas
+matplotlib
+nglview
+pyMOL
+scikit-learn
+biopython

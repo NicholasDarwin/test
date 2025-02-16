@@ -2,7 +2,7 @@
 ;	File 'topol.top' was generated
 ;	By user: unknown (0)
 ;	On host: DESKTOP-IJJJJ0I
-;	At date: Fri Feb 14 00:21:26 2025
+;	At date: Sat Feb 15 19:55:35 2025
 ;
 ;	This is a standalone topology file
 ;
@@ -11,7 +11,7 @@
 ;	
 ;	Executable:   /usr/bin/gmx
 ;	Data prefix:  /usr
-;	Working dir:  /mnt/c/Users/Lenovo/test
+;	Working dir:  /mnt/c/Users/Lenovo/Desktop/code/quantum_virus_simulation
 ;	Command line:
 ;	  gmx pdb2gmx -f data/1aki.pdb -o data/1aki_processed.gro -water spc
 ;	Force field was read from the standard GROMACS share directory.

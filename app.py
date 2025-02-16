@@ -3,11 +3,15 @@ from flask import Flask, render_template_string, request
 import subprocess
 import pandas as pd
 import re
+from virtual_screening_pipeline.src.docking.run_autodock_vina import run_vina
+from virtual_screening_pipeline.src.dynamics.run_gromacs import run_gromacs
+from virtual_screening_pipeline.src.analysis.binding_free_energy import calculate_binding_free_energy
+from virtual_screening_pipeline.src.analysis.visualize_results import generate_visualizations
 
 app = Flask(__name__)
 
 @app.route('/', methods=['GET', 'POST'])
-def run_gmx_pdb2gmx():
+def run_pipeline():
     # Ensure the 'data' folder exists
     if not os.path.exists("data"):
         os.makedirs("data")
@@ -18,67 +22,38 @@ def run_gmx_pdb2gmx():
             # Ensure that the filename doesn't have spaces or special characters
             pdb_filename = re.sub(r'[^a-zA-Z0-9_\-]', '', pdb_filename)
 
-            # Modify the command to run the gmx command in WSL
-            command = f"wsl gmx pdb2gmx -f data/{pdb_filename}.pdb -o data/{pdb_filename}_processed.gro -water spc"
+            # Run AutoDock Vina
+            docking_results = run_vina(pdb_filename)
 
-            try:
-                result = subprocess.run(command, input="6\n", capture_output=True, text=True, shell=True)
+            # Select top-ranked ligands and run GROMACS MD simulations
+            md_results = run_gromacs(docking_results)
 
-                # Capture the command output and errors
-                output = result.stdout
-                errors = result.stderr
+            # Perform binding free energy calculations
+            binding_free_energy_results = calculate_binding_free_energy(md_results)
 
-                # Extract relevant information using regular expressions
-                data = {
-                    'Force Field': [],
-                    'Chain': [],
-                    'Residues': [],
-                    'Atoms': [],
-                    'Mass (a.m.u.)': [],
-                    'Charge (e)': []
-                }
+            # Generate visualizations
+            visualizations = generate_visualizations(binding_free_energy_results)
 
-                # Force Field
-                force_field_match = re.search(r"Using the (.*?) force field", output)
-                if force_field_match:
-                    force_field = force_field_match.group(1)
-                    data['Force Field'].append(force_field)
+            # Convert the results to HTML for rendering
+            docking_html = docking_results.to_html(classes='table table-striped')
+            md_html = md_results.to_html(classes='table table-striped')
+            binding_free_energy_html = binding_free_energy_results.to_html(classes='table table-striped')
+            visualizations_html = visualizations.to_html(classes='table table-striped')
 
-                # Chain and residue information
-                chain_matches = re.findall(r"chain  #res #atoms\n\s+(\d) '(.*?)'\s+(\d+)\s+(\d+)", output)
-                for match in chain_matches:
-                    data['Chain'].append(match[1])
-                    data['Residues'].append(match[2])
-                    data['Atoms'].append(match[3])
-
-                # Mass and Charge (from the "Total mass" and "Total charge" lines)
-                mass_match = re.search(r"Total mass (\d+\.\d+) a.m.u.", output)
-                charge_match = re.search(r"Total charge (\d+\.\d+) e", output)
-
-                if mass_match and charge_match:
-                    total_mass = mass_match.group(1)
-                    total_charge = charge_match.group(1)
-                    data['Mass (a.m.u.)'].append(total_mass)
-                    data['Charge (e)'].append(total_charge)
-
-                # Create a DataFrame from the collected data
-                df = pd.DataFrame(data)
-
-                # Convert the dataframe to HTML for rendering
-                output_html = df.to_html(classes='table table-striped')
-
-                # Return HTML table with output and errors
-                return render_template_string(""" 
-                    <h1>GROMACS Command Output</h1>
-                    <h2>Output:</h2>
-                    {{ output_html|safe }}
-                    <h2>Errors:</h2>
-                    <pre>{{ errors }}</pre>
-                    <hr>
-                    <a href="/">Back</a>
-                """, output_html=output_html, errors=errors)
-            except Exception as e:
-                return f"Error running command: {e}"
+            # Return HTML table with results
+            return render_template_string(""" 
+                <h1>Virtual Screening Pipeline Results</h1>
+                <h2>Docking Results:</h2>
+                {{ docking_html|safe }}
+                <h2>Molecular Dynamics Results:</h2>
+                {{ md_html|safe }}
+                <h2>Binding Free Energy Results:</h2>
+                {{ binding_free_energy_html|safe }}
+                <h2>Visualizations:</h2>
+                {{ visualizations_html|safe }}
+                <hr>
+                <a href="/">Back</a>
+            """, docking_html=docking_html, md_html=md_html, binding_free_energy_html=binding_free_energy_html, visualizations_html=visualizations_html)
         else:
             return "Please provide a PDB file name."
     
