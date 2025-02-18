@@ -18,7 +18,6 @@ def convert_path_to_wsl(path):
     else:
         raise ValueError(f"Path must be a string or a list of strings, but got {type(path)}")
 
-
 def run_vina(receptor_file, ligand_files, output_dir):
     """
     Run AutoDock Vina for multiple ligands and convert the output to PDB.
@@ -66,7 +65,6 @@ def run_vina(receptor_file, ligand_files, output_dir):
         output_results.append({"ligand": ligand_file, "pdbqt_output": output_pdbqt, "pdb_output": output_pdb})
 
     return output_results
-
 
 def run_docking(receptor_file, ligand_files):
     """

@@ -3,23 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quantum Virus Simulation API</title>
+    <title>Quantum Virus Simulation</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/3dmol.js@2.0.1/build/3Dmol-min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        function runStep(step) {
+            const xhr = new XMLHttpRequest();
+            xhr.open("POST", `/${step}`, true);
+            xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    document.getElementById("terminal").innerHTML += xhr.responseText + "<br>";
+                }
+            };
+            xhr.send(JSON.stringify({
+                receptor_file: document.getElementById("receptor_file").value,
+                ligand_files: document.getElementById("ligand_files").value
+            }));
+        }
+
+        function openPyMOL() {
+            const xhr = new XMLHttpRequest();
+            xhr.open("POST", "/open_pymol", true);
+            xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    document.getElementById("terminal").innerHTML += xhr.responseText + "<br>";
+                }
+            };
+            xhr.send(JSON.stringify({
+                receptor_file: document.getElementById("receptor_file").value,
+                ligand_files: document.getElementById("ligand_files").value
+            }));
+        }
+
+        function showDataChart() {
+            const xhr = new XMLHttpRequest();
+            xhr.open("POST", "/show_data_chart", true);
+            xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    document.getElementById("chart-container").innerHTML = xhr.responseText;
+                }
+            };
+            xhr.send(JSON.stringify({
+                receptor_file: document.getElementById("receptor_file").value,
+                ligand_files: document.getElementById("ligand_files").value
+            }));
+        }
+
+        $(document).ready(function() {
+            $('#runPipelineForm').on('submit', function(event) {
+                event.preventDefault();
+                $.ajax({
+                    url: '/run_pipeline',
+                    type: 'POST',
+                    data: $(this).serialize(),
+                    success: function(response) {
+                        $('#result').html('<a href="/chart" target="_blank">View Chart</a>');
+                    },
+                    error: function(xhr, status, error) {
+                        $('#result').html('<p>Error: ' + xhr.responseJSON.error + '</p>');
+                    }
+                });
+            });
+        });
+    </script>
 </head>
 <body>
     <div class="container">
-        <h1 class="mt-5">Quantum Virus Simulation API</h1>
-        <form action="/run_pipeline" method="post" class="mt-4">
+        <h1 class="mt-5">Quantum Virus Simulation</h1>
+        <form id="runPipelineForm" class="mt-4">
             <div class="form-group">
-                <label for="receptor_file">Receptor File Name</label>
-                <input type="text" class="form-control" id="receptor_file" name="receptor_file" placeholder="Enter receptor file name">
+                <label for="receptor_file">Receptor File:</label>
+                <input type="text" class="form-control" id="receptor_file" name="receptor_file" required>
             </div>
             <div class="form-group">
-                <label for="ligand_files">Ligand File Names</label>
-                <input type="text" class="form-control" id="ligand_files" name="ligand_files" placeholder="Enter ligand file names (comma-separated)">
+                <label for="ligand_files">Ligand Files (comma-separated):</label>
+                <input type="text" class="form-control" id="ligand_files" name="ligand_files" required>
             </div>
             <button type="submit" class="btn btn-primary">Run Pipeline</button>
         </form>
+        <div id="result"></div>
+        <button onclick="runStep('run_docking')" class="btn btn-secondary mt-3">Run Docking</button>
+        <button onclick="runStep('run_md')" class="btn btn-secondary mt-3">Run Molecular Dynamics</button>
+        <button onclick="openPyMOL()" class="btn btn-secondary mt-3">Open PyMOL</button>
+        <button onclick="showDataChart()" class="btn btn-secondary mt-3">Data Chart</button>
+        <h2 class="mt-4">Terminal Output</h2>
+        <div id="terminal" style="background-color: black; color: white; padding: 10px; height: 300px; overflow-y: scroll;"></div>
+        <h2 class="mt-4">Molecular Visualization</h2>
+        <div id="viewer" style="width: 800px; height: 600px;">
+            <p>No molecular data loaded. Please run a simulation or load a PDB file.</p>
+        </div>
+        <h2 class="mt-4">Advanced Calculations</h2>
+        <a href="/advanced_calculations" class="btn btn-secondary mt-3">View Advanced Calculations</a>
+        <h2 class="mt-4">Data Chart</h2>
+        <div id="chart-container"></div>
     </div>
 </body>
 </html>

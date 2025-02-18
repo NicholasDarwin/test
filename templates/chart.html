@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simulation Results</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h1>Simulation Results</h1>
+    <button onclick="toggleChart()">Display Calculations</button>
+    <canvas id="resultsChart" width="400" height="200" style="display:none;"></canvas>
+    <script>
+        const chartData = JSON.parse('{{ chart_data | tojson | safe }}');
+        
+        function toggleChart() {
+            const chartCanvas = document.getElementById('resultsChart');
+            if (chartCanvas.style.display === 'none') {
+                chartCanvas.style.display = 'block';
+                renderChart();
+            } else {
+                chartCanvas.style.display = 'none';
+            }
+        }
+
+        function renderChart() {
+            const ctx = document.getElementById('resultsChart').getContext('2d');
+            const chart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['Receptor', 'Ligands', 'Docked'],
+                    datasets: [
+                        {
+                            label: 'Molecular Weight',
+                            data: [chartData.Receptor['Molecular Weight'], ...chartData.Ligands.map(l => l['Molecular Weight']), chartData.Docked['Molecular Weight']],
+                            backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                            borderColor: 'rgba(75, 192, 192, 1)',
+                            borderWidth: 1
+                        },
+                        {
+                            label: 'Number of Atoms',
+                            data: [chartData.Receptor['Number of Atoms'], ...chartData.Ligands.map(l => l['Number of Atoms']), chartData.Docked['Number of Atoms']],
+                            backgroundColor: 'rgba(153, 102, 255, 0.2)',
+                            borderColor: 'rgba(153, 102, 255, 1)',
+                            borderWidth: 1
+                        },
+                        {
+                            label: 'Docking Scores',
+                            data: [null, ...chartData['Docking Scores'], null],
+                            backgroundColor: 'rgba(255, 159, 64, 0.2)',
+                            borderColor: 'rgba(255, 159, 64, 1)',
+                            borderWidth: 1
+                        }
+                    ]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+        }
+    </script>
+</body>
+</html>

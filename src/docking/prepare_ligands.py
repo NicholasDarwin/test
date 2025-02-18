@@ -1,11 +1,11 @@
 import os
 import logging
 import subprocess
-import time
+import platform
 
 def prepare_ligand(ligand_pdb_path):
     """
-    Prepare a ligand file for docking by converting it to PDBQT format.
+    Prepare a ligand file for docking by converting it to PDBQT format using OpenBabel.
     
     :param ligand_pdb_path: Path to the ligand PDB file.
     :return: Path to the prepared PDBQT ligand file.
@@ -20,32 +20,38 @@ def prepare_ligand(ligand_pdb_path):
     ligand_pdbqt_filename = ligand_filename.replace(".pdb", ".pdbqt")
     ligand_pdbqt_path = os.path.join(ligand_dir, ligand_pdbqt_filename)
 
-    prepare_ligand_script = (
-        "C:\\Program Files (x86)\\MGLTools-1.5.7\\Lib\\site-packages\\AutoDockTools\\Utilities24\\prepare_ligand4.py"
-    )
-    
+    if platform.system() == "Windows":
+        # Convert Windows path to WSL path manually
+        ligand_pdb_path_wsl = ligand_pdb_path.replace("C:\\", "/mnt/c/").replace("\\", "/")
+        ligand_pdbqt_path_wsl = ligand_pdbqt_path.replace("C:\\", "/mnt/c/").replace("\\", "/")
+    else:
+        ligand_pdb_path_wsl = subprocess.check_output(["wslpath", "-u", ligand_pdb_path]).decode().strip()
+        ligand_pdbqt_path_wsl = subprocess.check_output(["wslpath", "-u", ligand_pdbqt_path]).decode().strip()
+
+    # OpenBabel command to convert PDB to PDBQT in WSL
     cmd = (
-        f'cd "{ligand_dir}" && '
-        f'"C:\\Program Files (x86)\\MGLTools-1.5.7\\python.exe" "{prepare_ligand_script}" '
-        f'-l "{ligand_filename}" -o "{ligand_pdbqt_filename}"'
+        f"wsl obabel '{ligand_pdb_path_wsl}' -O '{ligand_pdbqt_path_wsl}'"
     )
     
     logging.debug(f"Running command: {cmd}")
     
     try:
-        # Open a new terminal window and run the command
-        if os.name == 'nt':  # Windows
-            subprocess.run(f'start cmd /c "{cmd}"', shell=True, check=True)
-        else:  # Unix-based systems
-            subprocess.run(f'gnome-terminal -- bash -c "{cmd}; exec bash"', shell=True, check=True)
+        # Execute the OpenBabel command in WSL
+        subprocess.run(cmd, shell=True, check=True)
         
         logging.info(f"Ligand prepared: {ligand_pdbqt_path}")
     except subprocess.CalledProcessError as e:
         logging.error(f"Error in ligand preparation: {e.stderr}")
         raise RuntimeError(f"Ligand preparation failed: {e.stderr}")
     
-    # Add a short delay to ensure the file system is updated
-    time.sleep(1)
+    # Clean the PDBQT file by removing inappropriate tags
+    with open(ligand_pdbqt_path, 'r') as file:
+        lines = file.readlines()
+    
+    with open(ligand_pdbqt_path, 'w') as file:
+        for line in lines:
+            if not line.startswith("HEADER") and not line.startswith("TITLE"):
+                file.write(line)
     
     return ligand_pdbqt_path
 

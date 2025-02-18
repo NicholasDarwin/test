@@ -1,0 +1,16 @@
+;
+;	File 'topol.top' was generated
+;	By user: unknown (0)
+;	On host: DESKTOP-IJJJJ0I
+;	At date: Mon Feb 17 17:48:40 2025
+;
+;	This is a standalone topology file
+;
+;	Created by:
+;	         :-) GROMACS - gmx pdb2gmx, 2023.3-Ubuntu_2023.3_1ubuntu3 (-:
+;	
+;	Executable:   /usr/bin/gmx
+;	Data prefix:  /usr
+;	Working dir:  /mnt/c/Users/Lenovo/Desktop/code/quantum_virus_simulation
+;	Command line:
+;	  gmx pdb2gmx -ignh -f /mnt/c/Users/Lenovo/Desktop/code/quantum_virus_simulation/data/1HXW.pdb -o /mnt/c/Users/Lenovo/D
